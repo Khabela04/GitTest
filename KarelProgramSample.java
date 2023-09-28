@@ -17,13 +17,12 @@ public class KarelProgramSample extends SuperKarel {
 	public void run() {
 	move();
 	move();
+	pickBeeper();
 	turnLeft();
 	move();
-	pickBeeper();
-	move();
+	turnRight();
 	move();
 	putBeeper();
-	turnLeft();
 	move();
 	}
 	
