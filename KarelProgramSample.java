@@ -24,6 +24,13 @@ public class KarelProgramSample extends SuperKarel {
 	turnRight();
 	move();
 	move();
+	sheuxvieMarjvniv();
 	}
 	
+public void sheuxvieMarjvniv(){
+	turnLeft();
+	turnLeft();
+	turnLeft();
+	
+}
 }
