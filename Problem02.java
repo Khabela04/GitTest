@@ -8,7 +8,6 @@ public class Problem02 extends Karel {
 		move();
 		move();
 		move();
-		move();
 		pickBeeper();
 		pickBeeper();
 		pickBeeper();
