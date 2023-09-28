@@ -27,7 +27,7 @@ public class KarelProgramSample extends SuperKarel {
 	sheuxvieMarjvniv();
 	}
 	
-public void sheuxvieMarjvniv(){
+private void sheuxvieMarjvniv(){
 	turnLeft();
 	turnLeft();
 	turnLeft();
