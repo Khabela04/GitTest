@@ -20,3 +20,4 @@ public class Problem02 extends Karel {
 		
 	}
 }
+// Problems 3-7
