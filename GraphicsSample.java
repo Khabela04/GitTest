@@ -10,7 +10,7 @@ public class GraphicsSample extends GraphicsProgram {
 		add(myRect, 100, 150);
 //		GRect secondRect = new GRect(100, 200);
 //		add(secondRect, 300, 100);
-		GRect oldRect = myRect();
+		GRect oldRect = myRect;
 		myRect = new GRect(100, 200);
 		add(myRect, 300, 150);
 		oldRect.setFilled(true);
