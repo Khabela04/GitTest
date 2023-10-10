@@ -5,6 +5,8 @@ public class Problem12 extends GraphicsProgram {
 	public void run(){
 		GRect myRect = new GRect(250, 250);
 		add(myRect, 250, 150);
+		GRect myDoor = new GRect(40, 150);
+		add(myDoor,375, 350);
 	}
 
 }
