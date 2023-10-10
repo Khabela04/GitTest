@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -15,5 +17,7 @@ public class GraphicsSample extends GraphicsProgram {
 		add(myRect, 300, 150);
 		oldRect.setFilled(true);
 		myRect.setFilled(true);
+		oldRect.setColor(Color.GREEN);
+		
 	}
 }
