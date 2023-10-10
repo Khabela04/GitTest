@@ -12,7 +12,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect my2Window = new GRect(50, 50);
 		add(my2Window, 420, 190);
 		GLine myRoof = new GLine(20, 20, 20, 20);
-		add(myRoof, 250, 150);
+		add(myRoof, 250, 100);
 	}
 
 }
