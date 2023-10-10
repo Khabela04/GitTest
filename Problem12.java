@@ -8,7 +8,7 @@ public class Problem12 extends GraphicsProgram {
 		GRect myDoor = new GRect(80, 100);
 		add(myDoor,335, 300);
 		GRect myWindow = new GRect(50, 50);
-		add(myWindow, 280, 170);
+		add(myWindow, 280, 190);
 	}
 
 }
