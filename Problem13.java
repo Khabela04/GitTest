@@ -1,4 +1,4 @@
-import java.awt.Dimension;
+
 
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
@@ -6,9 +6,9 @@ import acm.program.GraphicsProgram;
 public class Problem13 extends GraphicsProgram {
 	public void run() {
 		GRect myRect = new GRect (80,160);
-		Dimension canvasSize = getSize();
-        int width = canvasSize.width;
-        int height = canvasSize.height;
+		int height = getHeight();
+		int width= getWidth();
+		
         add(new GLine(0, height/2, width, height/2));
 	}
 
