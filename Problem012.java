@@ -4,8 +4,8 @@ import acm.program.GraphicsProgram;
 public class Problem012 extends GraphicsProgram {
 	private static final int HOUSE_WIDTH = 200;
 	private static final int HOUSE_HEIGHT = 300;
-	private static final int WINDOW_WIDTH = 70;
-	private static final int WINDOW_HEIGHT = 70;
+	private static final int WINDOW_WIDTH = 40;
+	private static final int WINDOW_HEIGHT = 40;
 	public void run(){
 		drawMidLine();
 		drawHouse();
