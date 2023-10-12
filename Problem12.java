@@ -13,8 +13,8 @@ public class Problem12 extends GraphicsProgram {
 		add(my2Window, 420, 190);
 		add(new GLine(250, 150, 375, 50));
 		add(new GLine(375, 50, 500, 150));
-		
 	}
+	
 
 }
 13, 14
