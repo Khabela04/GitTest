@@ -9,6 +9,7 @@ public class Problem13 extends GraphicsProgram {
 		Dimension canvasSize = getSize();
         int width = canvasSize.width;
         int height = canvasSize.height;
+        add(new GLine(0, width/2, width, height/2));
 	}
 
 }
