@@ -27,7 +27,7 @@ public class Problem012 extends GraphicsProgram {
 				x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH/2;
 			}
 			else {
-				x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH*5/2;
+				x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH*7/2;
 			}
 		 
 			GRect window = new GRect(WINDOW_WIDTH, WINDOW_HEIGHT);
