@@ -17,4 +17,4 @@ public class Problem12 extends GraphicsProgram {
 	
 
 }
-13, 14
+//13, 14
