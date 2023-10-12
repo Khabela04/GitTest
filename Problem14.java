@@ -11,6 +11,7 @@ public class Problem14 extends GraphicsProgram{
 		add(Face, (width-200)/2, (height-200)/2);
 		add(new GRect(50, 50), (width-150)/2, (height-150)/2);
 		add(new GLine(((width-150)/2)+25, (height-150)/2, ((width-150)/2)+25, (height-150)/2+50));
+	
 		add(new GRect(50, 50), (width/2)+22, (height-150)/2);
 		add(new GLine(((width-150)/2)+50, (height-200), (width/2)+22, (height-200)));
 		add(new GLine((width/2)+22, height-200, (width/2)+22, height-170));
