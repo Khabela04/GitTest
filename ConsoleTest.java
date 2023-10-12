@@ -6,7 +6,7 @@ public class ConsoleTest extends ConsoleProgram {
 	println("Your kid's number is"+kids);
 	int firstNum = readInt("Enter the first num: ");
 	int secondNum = readInt("Enter the first num: ");
-	int avg = firstNum+secondNum;
+	int avg = (firstNum+secondNum)/2;
 	println("Average is "+avg);
 
 }
