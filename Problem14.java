@@ -12,7 +12,7 @@ public class Problem14 extends GraphicsProgram{
 		add(new GLine(((width-150)/2)+50, (height-200), (width/2)+22, (height-200)));
 		add(new GLine((width/2)+22, height-200, (width/2)+22, height-170));
 		add(new GLine(((width-150)/2)+50, (height-200), ((width-150)/2)+50, height-170));
-		add(new Gline(((width-150)/2)+50), height-170,(width/2)+22, height-170 );
+		add(new GLine(((width-150)/2)+50), height-170,(width/2)+22, height-170 );
 	}
 
 }
