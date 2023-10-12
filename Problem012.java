@@ -24,10 +24,10 @@ public class Problem012 extends GraphicsProgram {
 			int y = (int) (getHeight()-HOUSE_HEIGHT + WINDOW_HEIGHT/2);
 			if(i == 0){
 				
-				int x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH/2;
+				x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH/2;
 			}
 			else {
-				int x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH*3/2;
+				x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH*3/2;
 			}
 		 
 			GRect window = new GRect(WINDOW_WIDTH, WINDOW_HEIGHT);
