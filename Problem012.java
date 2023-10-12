@@ -2,11 +2,30 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Problem012 extends GraphicsProgram {
-	private static final int WIDTH = 200;
+	private static final int HOUSE_WIDTH = 200;
+	private static final int HOUSE_HEIGHT = 300;
+	private static final int WINDOW_WIDTH = 40;
+	private static final int WINDOW_HEIGHT = 200;
 	public void run(){
 		drawMidLine();
+		drawHouse();
 	}
 	
+	private void drawHouse() {
+		drawWall();
+		drawWindows();
+		drawRoof();
+		drawDoor();
+	}
+
+	private void drawWall() {
+		GRect wall = new GRect(HOUSE_WIDTH, HOUSE_HEIGHT);
+		double x = getWidth()/2-HOUSE_WIDTH/2;
+		double y = getHeight()-HOUSE_HEIGHT;
+		add(wall, x, y);
+		
+	}
+
 	private void drawMidLine(){
 		double x1 = 0;
 		double y1 = getHeight()/2;
