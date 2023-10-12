@@ -5,7 +5,7 @@ public class Problem012 extends GraphicsProgram {
 	private static final int HOUSE_WIDTH = 200;
 	private static final int HOUSE_HEIGHT = 300;
 	private static final int WINDOW_WIDTH = 40;
-	private static final int WINDOW_HEIGHT = 200;
+	private static final int WINDOW_HEIGHT = 40;
 	public void run(){
 		drawMidLine();
 		drawHouse();
@@ -13,9 +13,25 @@ public class Problem012 extends GraphicsProgram {
 	
 	private void drawHouse() {
 		drawWall();
-//		drawWindows();
+		drawWindows();
 //		drawRoof();
 //		drawDoor();
+	}
+
+	private void drawWindows() {
+		for(int i = 0; i<2; i++){
+			int x = getWidth()/2-HOUSE_WIDTH/2+ WINDOW_WIDTH/2;
+			int y = (int) (getHeight()-HOUSE_HEIGHT + WINDOW_HEIGHT/2);  
+			if(i == 0){
+				
+			}
+			else {
+				
+			}
+			GRect window = new GRect(WINDOW_WIDTH, WINDOW_HEIGHT);
+			add(window, x, y);
+		}
+		
 	}
 
 	private void drawWall() {
