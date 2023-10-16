@@ -8,7 +8,7 @@ public class Problem15 extends ConsoleProgram {
 		int avg = (num1+num2)/2;
 		if(avg*2 != (num1+num2))
 		{
-		println("Average of this two numbers is "+ 1/2);
+		println("Average of this two numbers is "+ avg+1);
 	}
 
 }
