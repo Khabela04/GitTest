@@ -6,7 +6,7 @@ public class Problem15 extends ConsoleProgram {
 		int num1 = readInt("Write first whole number ");
 		int num2 = readInt("Write second whole number ");
 		int avg = (num1+num2)/2;
-		println(avg);
+		println("Average of this two numbers is "+ avg);
 	}
 
 }
