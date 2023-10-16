@@ -5,7 +5,7 @@ public class Problem17 extends ConsoleProgram {
 	public void run(){
 		double num = readDouble("Write a real number: ");
 		int whole = (int) (num);
-		double ratio = num-whole;
+		double ratio =(int) (num-whole);
 		println("Whole part of this number is "+whole+" and ratio part is "+ratio );
 		println(3.14-3);
 	}
