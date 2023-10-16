@@ -3,9 +3,9 @@ import acm.program.ConsoleProgram;
 //მაგალითად მომხმარებელმა თუ შეიყვანა 3.14 თქვენმა პროგრამამ უნდა დაბეჭდოს 3 და 0.14 
 public class Problem17 extends ConsoleProgram {
 	public void run(){
-		double num = readDouble("Write a real number ");
+		double num = readDouble("Write a real number: ");
 		int whole = (int) (num);
 		double ratio = num-whole;
-		println("Whole part of this number is "+whole+"and ratio part is "+ratio );
+		println("Whole part of this number is "+whole+" and ratio part is "+ratio );
 	}
 }
