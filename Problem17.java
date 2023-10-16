@@ -7,5 +7,6 @@ public class Problem17 extends ConsoleProgram {
 		int whole = (int) (num);
 		double ratio = num-whole;
 		println("Whole part of this number is "+whole+" and ratio part is "+ratio );
+		println(3.14-3);
 	}
 }
