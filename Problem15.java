@@ -5,8 +5,11 @@ public class Problem15 extends ConsoleProgram {
 	public void run(){
 		int num1 = readInt("Write first whole number ");
 		int num2 = readInt("Write second whole number ");
-		double avg = (num1+num2)/3;
-		println("Average of this two numbers is "+ avg);
+		int avg = (num1+num2)/2;
+		if(avg*2 != (num1+num2))
+		{
+		println("Average of this two numbers is "+ 1/2);
 	}
 
+}
 }
