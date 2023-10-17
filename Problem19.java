@@ -6,6 +6,9 @@ public class Problem19 extends ConsoleProgram {
 		for(int i=0; i<n; i++){
 			println("hello World"+i);
 		}
+		while(true){
+			println("hello World");
+		}
 	}
 }
 
