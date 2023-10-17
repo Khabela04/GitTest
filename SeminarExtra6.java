@@ -9,7 +9,7 @@ public class SeminarExtra6 extends ConsoleProgram {
 		while(true){
 			int number = readInt("Give me a number");
 			if(number == GOLDEN_NUMBER) { break;}
-					sum= number;
+					sum=+ number;
 		}
 		println(sum);
 		}
