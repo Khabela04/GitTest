@@ -7,7 +7,7 @@ public class SeminarExtra6 extends ConsoleProgram {
 	public void run(){
 		int sum =0;
 		while(true){
-			int number = readInt("Give me a number");
+			int number = readInt("Give me a number ");
 			if(number == GOLDEN_NUMBER) { break;}
 					sum+= number;
 		}
