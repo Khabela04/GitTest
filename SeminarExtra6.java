@@ -5,10 +5,11 @@ import acm.program.ConsoleProgram;
 public class SeminarExtra6 extends ConsoleProgram {
 	private static final int GOLDEN_NUMBER = 0;
 	public void run(){
+		int sum =0;
 		while(true){
 			int number = readInt("Give me a number");
 			if(number == GOLDEN_NUMBER) { break;}
-					int sum= +number;
+					sum= +number;
 		}
 		println(sum);
 		}
