@@ -5,7 +5,6 @@ import acm.program.*;
 public class Problem21 extends GraphicsProgram {
 	public void run(){
 		int n = 10;
-		int l = 0;
 		int m = 10;
 		int x = 0;
 		int y = 0;
