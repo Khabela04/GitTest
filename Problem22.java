@@ -28,6 +28,7 @@ public class Problem22 extends GraphicsProgram {
 			add(new GRect(20,20), x, y);
 			x +=20;
 			}
+		x -=160;
 		}
 }
 }
