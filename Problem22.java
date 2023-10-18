@@ -29,6 +29,7 @@ public class Problem22 extends GraphicsProgram {
 			x +=20;
 			}
 		x -=160;
+		y -=160;
 		}
 }
 }
