@@ -6,30 +6,34 @@ public class Problem22 extends GraphicsProgram {
 	public void run(){
 		int x = 0;
 		int y = 0;
+		int n = 8;
+		int size = 64;
+		int cubeHeight = size/n;
+		int cubeWidth = size/n;
 		for(int i = 0; i<4; i++){
-		for(int j = 0; j<4; j++){
-		add(new GRect(20,20), x, y);
-		GRect myRect = new GRect(20,20);
+		for(int j = 0; j<n/2; j++){
+		add(new GRect(cubeWidth,cubeHeight), x, y);
+		GRect myRect = new GRect(cubeWidth,cubeHeight);
 		myRect.setFilled(true);
-		x += 20;
+		x += cubeWidth;
 		add(myRect,x, y);
-		x += 20;
+		x += cubeWidth;
 		
 	
 	}
-		y +=20;
-		x -= 160;
-		for(int l = 0; l<4; l++){
-			GRect myRect = new GRect(20,20);
+		y +=cubeHeight;
+		x -= n*cubeWidth;
+		for(int l = 0; l<n/2; l++){
+			GRect myRect = new GRect(cubeWidth,cubeHeight);
 			
 			add(myRect,x, y);
 			myRect.setFilled(true);
-			x +=20;
-			add(new GRect(20,20), x, y);
-			x +=20;
+			x +=cubeWidth;
+			add(new GRect(cubeWidth,cubeHeight), x, y);
+			x +=cubeWidth;
 			}
-		x -=160;
-		y += 20;
+		x -= 8*cubeWidth;
+		y += cubeHeight;
 		}
 }
 }
