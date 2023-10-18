@@ -8,8 +8,8 @@ public class Problem21 extends GraphicsProgram {
 		int m = 10;
 		int x = 0;
 		int y = 0;
-		double boxHeight = getHeight()/n;
-		double boxWidth = getWidth()/m;
+		double boxHeight = 400/n;
+		double boxWidth = 400/m;
 		for(int i = 0; i<n; i++){
 			add(new GLine(0, y, getWidth(), y));
 			y += boxHeight;
