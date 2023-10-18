@@ -5,6 +5,7 @@ import acm.program.*;
 public class Problem21 extends GraphicsProgram {
 	public void run(){
 		int n = 10;
+		int l = 0;
 		int m = 10;
 		int x = 0;
 		int y = 0;
@@ -14,8 +15,9 @@ public class Problem21 extends GraphicsProgram {
 			add(new GLine(0, y, 400, y));
 			y += boxHeight;
 			for(int j = 0; j<m; j++){
-				add(new GLine(x, 0, x, y));
+				add(new GLine(x, l, x, y));
 					x += boxWidth;
+				l = (int) (y-boxHeight);
 				}
 			}
 			}
