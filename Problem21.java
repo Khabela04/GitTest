@@ -11,7 +11,7 @@ public class Problem21 extends GraphicsProgram {
 		double boxHeight = 400/n;
 		double boxWidth = 400/m;
 		for(int i = 0; i<n; i++){
-			add(new GLine(0, y, getWidth(), y));
+			add(new GLine(0, y, 400, y));
 			y += boxHeight;
 			}
 	}
