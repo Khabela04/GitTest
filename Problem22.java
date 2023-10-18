@@ -5,8 +5,8 @@ import acm.program.*;
 public class Problem22 extends GraphicsProgram {
 	public void run(){
 		int size = 64;
-		int n = 10;
-		int m = 10;
+		int n = 8;
+		int m = 8;
 		int x = 0;
 		int y = 0;
 		double boxHeight = size/n;
