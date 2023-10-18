@@ -6,13 +6,14 @@ public class Problem21 extends GraphicsProgram {
 	public void run(){
 		int n = 10;
 		int m = 10;
+		int x = 0;
+		int y = 0;
 		double boxHeight = getHeight()/n;
 		double boxWidth = getWidth()/m;
 		for(int i = 0; i<n; i++){
-			GRect myRect = new GRect(getWidth(), boxHeight);
-			add (myRect, 0, 0);
-	
-		}
+			add(new GLine(0, y, getWidth(), y));
+			y += boxHeight;
+			}
 	}
 
 }
