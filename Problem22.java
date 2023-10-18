@@ -13,7 +13,16 @@ public class Problem22 extends GraphicsProgram {
 		x += 20;
 		add(myRect,x, y);
 		x += 20;
+		
 	
 	}
+		for(int i = 0; i<4; i++){
+			y +=20;
+			GRect myRect = new GRect(x-80,y);
+			myRect.setFilled(true);
+			add(myRect,x, y);
+			
+		
+		}
 }
 }
