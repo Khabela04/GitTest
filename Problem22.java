@@ -4,7 +4,7 @@ import acm.program.*;
 //22. ჭადრაკის დაფის დახატვა 8x8 ზე 
 public class Problem22 extends GraphicsProgram {
 	public void run(){
-		int size = 64;
+		int size = 256;
 		int n = 8;
 		int m = 8;
 		int x = 0;
