@@ -17,7 +17,7 @@ public class Problem21 extends GraphicsProgram {
 			for(int j = 0; j<m; j++){
 				add(new GLine(x, 0, x, 400 ));
 				x += boxWidth;
-				if(x>400){break;
+				if(x == 400){break;
 				}
 			}
 			}
