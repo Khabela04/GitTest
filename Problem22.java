@@ -7,7 +7,7 @@ public class Problem22 extends GraphicsProgram {
 		int x = 0;
 		int y = 0;
 		int n = 8;
-		int size = getWidth();
+		int size = getHeight();
 		int cubeHeight = size/n;
 		int cubeWidth = size/n;
 		for(int i = 0; i<4; i++){
