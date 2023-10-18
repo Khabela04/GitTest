@@ -14,11 +14,12 @@ public class Problem21 extends GraphicsProgram {
 		for(int i = 0; i<n; i++){
 			add(new GLine(0, y, 400, y));
 			y += boxHeight;
+			if(x == 400){break;
+			}
 			for(int j = 0; j<m; j++){
 				add(new GLine(x, 0, x, 400 ));
 				x += boxWidth;
-				if(x == 400){break;
-				}
+				
 			}
 			}
 		
