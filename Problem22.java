@@ -5,6 +5,6 @@ import acm.program.*;
 public class Problem22 extends GraphicsProgram {
 	public void run(){
 		add(new GRect(20,20), 0, 0);
-		
+		add(new GRect(20,20),0+20, 0);
 	}
 }
