@@ -11,10 +11,10 @@ public class Problem211 extends GraphicsProgram {
 		int y = 0;
 		double boxHeight = 400/n;
 		double boxWidth = 400/m;
-		for(int i = 0; i<n; i++){
+		for(int i = 0; i<n+1; i++){
 			add(new GLine(0, y, 400, y));
 			y += boxHeight;}
-			for(int j = 0; j<m; j++){
+			for(int j = 0; j<m+1; j++){
 				add(new GLine(x, 0, x, 400 ));
 				x += boxWidth;
 			}
