@@ -19,7 +19,8 @@ public class Problem22 extends GraphicsProgram {
 		y +=20;
 		for(int i = 0; i<4; i++){
 			GRect myRect = new GRect(20,20);
-			add(myRect,x-160, y);
+			x -= 160;
+			add(myRect,x, y);
 			myRect.setFilled(true);
 			x +=20;
 			add(new GRect(20,20), x, y);
