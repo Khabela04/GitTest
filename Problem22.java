@@ -14,10 +14,11 @@ public class Problem22 extends GraphicsProgram {
 		for(int i = 0; i<n+1; i++){
 			add(new GLine(0, y, size, y));
 			y += boxHeight;
-		}
+		
 			for(int j = 0; j<m+1; j++){
-				add(new GLine(x, 0, x, size ));
+				add(new GLine(x, 0, x, y ));
 				x += boxWidth;
 			}
+		}
 	}
 }
