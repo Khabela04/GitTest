@@ -13,12 +13,12 @@ public class Problem211 extends GraphicsProgram {
 		double boxWidth = 400/m;
 		for(int i = 0; i<n+1; i++){
 			add(new GLine(0, y, 400, y));
-			y += boxHeight;
+			y += boxHeight;}
 			for(int j = 0; j<10; j++){
 				add(new GLine(x, 0, x, 400 ));
 				x += boxWidth;
 			}
-			}
+			
 		
 	}
 }
