@@ -23,7 +23,7 @@ public class Problem22 extends GraphicsProgram {
 			myRect.setFilled(true);
 			x +=20;
 			add(new GRect(20,20), x, y);
-			x+=20;
+			
 			
 		
 		}
