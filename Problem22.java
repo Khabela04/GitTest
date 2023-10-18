@@ -7,7 +7,7 @@ public class Problem22 extends GraphicsProgram {
 		int x = 0;
 		int y = 0;
 		for(int i = 0; i<4; i++){
-		for(int i = 0; i<4; i++){
+		for(int j = 0; j<4; j++){
 		add(new GRect(20,20), x, y);
 		GRect myRect = new GRect(20,20);
 		myRect.setFilled(true);
@@ -19,7 +19,7 @@ public class Problem22 extends GraphicsProgram {
 	}
 		y +=20;
 		x -= 160;
-		for(int i = 0; i<4; i++){
+		for(int l = 0; l<4; l++){
 			GRect myRect = new GRect(20,20);
 			
 			add(myRect,x, y);
