@@ -22,3 +22,4 @@ public class Problem022 extends GraphicsProgram {
 	}
 
 }
+// 23-26
