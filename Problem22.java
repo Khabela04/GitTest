@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.*;
 
@@ -28,6 +30,7 @@ public class Problem22 extends GraphicsProgram {
 			
 			add(myRect,x, y);
 			myRect.setFilled(true);
+			myRect.setColor(Color.RED);
 			x +=cubeWidth;
 			add(new GRect(cubeWidth,cubeHeight), x, y);
 			x +=cubeWidth;
