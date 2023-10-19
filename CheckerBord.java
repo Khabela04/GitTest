@@ -3,8 +3,8 @@ import acm.program.*;
 
 public class CheckerBord extends GraphicsProgram {
 	public void run(){
-		int rowsNum = 16;
-		int columnsNum = 16;
+		int rowsNum = 8;
+		int columnsNum = 8;
 		for(int i = 0; i < rowsNum; i++){
 			for(int j = 0; j < columnsNum; j++){
 				double x = j*getWidth()/columnsNum;
