@@ -9,7 +9,7 @@ public class CheckerBord extends GraphicsProgram {
 			for(int j = 0; j < columnsNum; j++){
 				double x = j*getHeight()/rowsNum;
 				double y = i*getHeight()/rowsNum;
-				GRect myRect = new GRect(x, y, getWidth()/columnsNum, getHeight()/rowsNum);
+				GRect myRect = new GRect(x, y, getHeight()/rowsNum, getHeight()/rowsNum);
 				add(myRect);
 			}
 		}
