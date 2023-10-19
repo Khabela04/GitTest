@@ -7,7 +7,6 @@ public class Problem020 extends ConsoleProgram {
 		for(int i = 0; i < n; i++){
 			int number = readInt("Give me a number #" + i + " :" );
 			sum += number;
-			println(number);
 		}
 		println(sum);
 	}
