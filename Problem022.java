@@ -10,7 +10,7 @@ public class Problem022 extends GraphicsProgram {
 				double x = j* Length;
 				double y = i* Length;
 				
-				boolean isFilled = (i+j)%2 == 0;
+				boolean isFilled = (i+j)%2 == 1;
 				drawSquare(x, y, Length, isFilled);
 			}
 		}
