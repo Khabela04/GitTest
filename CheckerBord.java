@@ -7,7 +7,7 @@ public class CheckerBord extends GraphicsProgram {
 		int columnsNum = 8;
 		for(int i = 0; i < rowsNum; i++){
 			for(int j = 0; j < columnsNum; j++){
-				double x = j*getWidth()/columnsNum;
+				double x = j*getHeight()/rowsNum;
 				double y = i*getHeight()/rowsNum;
 				GRect myRect = new GRect(x, y, getWidth()/columnsNum, getHeight()/rowsNum);
 				add(myRect);
