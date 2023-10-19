@@ -11,9 +11,7 @@ public class CheckerBord extends GraphicsProgram {
 				double y = i*getHeight()/rowsNum;
 				GRect myRect = new GRect(x, y, getHeight()/rowsNum, getHeight()/rowsNum);
 				add(myRect);
-				if((1+j)%2 != 0){
-					myRect.setFilled(true);
-				}
+				myRect.setFilled((1+j)% 2!=0);
 			}
 		}
 	}
