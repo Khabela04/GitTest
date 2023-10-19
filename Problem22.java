@@ -17,7 +17,7 @@ public class Problem22 extends GraphicsProgram {
 		add(new GRect(cubeWidth,cubeHeight), x, y);
 		GRect myRect = new GRect(cubeWidth,cubeHeight);
 		myRect.setFilled(true);
-		myRect.setColor(Color.GRAY);
+		myRect.setColor(Color.BLUE);
 		
 		x += cubeWidth;
 		add(myRect,x, y);
@@ -32,7 +32,7 @@ public class Problem22 extends GraphicsProgram {
 			
 			add(myRect,x, y);
 			myRect.setFilled(true);
-			myRect.setColor(Color.GRAY);
+			myRect.setColor(Color.BLUE);
 			x +=cubeWidth;
 			add(new GRect(cubeWidth,cubeHeight), x, y);
 			x +=cubeWidth;
