@@ -13,7 +13,7 @@ public class Problem25 extends ConsoleProgram {
 				}
 			}
 			else{
-			jer = mult;
+			println(mult);
 			}
 		}
 		println(jer);
