@@ -4,7 +4,7 @@ import acm.program.ConsoleProgram;
 public class Problem24 extends ConsoleProgram {
 	public void run(){
 		double n = readInt("Give me a number: ");
-		int division = 1;
+		int division = 0;
 		for(double i = 0; i < n; i++){
 			if(n % i == 0){
 			division += 1;
