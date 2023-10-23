@@ -8,7 +8,7 @@ public class Problem24 extends ConsoleProgram {
 		for(int i = 0; i < n; i++){
 			division += 1;
 		}
-		println(n+" can be divided on "+" numbers");
+		println(n+" can be divided on "+ division +" numbers");
 	}
 //	private int divisions(int n){
 //		int divisions = 0;
