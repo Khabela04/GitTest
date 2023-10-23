@@ -4,13 +4,8 @@ import acm.program.ConsoleProgram;
 public class Problem24 extends ConsoleProgram {
 	public void run(){
 		int n = readInt("Give me a number: ");
-		int divisions = 0; 
-		for(int i = 0; i < n; i++){
-			if(n % i == 0){
-				divisions += 1;
-			}
-		}
-		println(n+" can be divided on "+divisions+" numbers");
+		
+		println(n+" can be divided on "+" numbers");
 	}
 //	private int divisions(int n){
 //		int divisions = 0;
