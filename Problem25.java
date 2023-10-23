@@ -5,7 +5,7 @@ public class Problem25 extends ConsoleProgram {
 		double n = readInt("Give me the first number: ");
 		double m = readInt("Give me the second number: ");
 		double mult = n*m;
-		for(int i = 2; i < n+1; i++){
+		for(double i = n+1; i < 2; i--){
 			if(mult/i % n ==0){
 				if(mult/i % m ==0){
 					println(mult/i);
