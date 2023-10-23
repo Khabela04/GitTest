@@ -12,6 +12,9 @@ public class Problem25 extends ConsoleProgram {
 					jer = mult/i;
 				}
 			}
+			else{
+			jer = mult;
+			}
 		}
 		println(jer);
 		
