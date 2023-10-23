@@ -7,6 +7,6 @@ public class Problem23 extends ConsoleProgram {
 		for(int i = 0; i < n+1; i++){
 			sum += i;
 		}
-		println(sum);
+		println("Sum of the numbers before "+ n+" is "+ sum);
 	}
 }
