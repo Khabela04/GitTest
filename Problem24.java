@@ -9,6 +9,9 @@ public class Problem24 extends ConsoleProgram {
 			if(n % i == 0){
 			division += 1;
 			}
+			else{
+				division = 2;
+			}
 		}
 		println(n+" can be divided on "+ division +" numbers");
 	}
