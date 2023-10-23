@@ -5,14 +5,14 @@ public class Problem25 extends ConsoleProgram {
 		int n = readInt("Give me the first number: ");
 		int m = readInt("Give me the second number: ");
 		int mult = n*m;
-		if(mult/2 % n ==0){
-			if(mult/2 % m ==0){
-				println(mult/2);
+		for(int i = 0; i < n; i++){
+			if(mult/i % n ==0){
+				if(mult/i % m ==0){
+					println(mult/i);
+				}
 			}
 		}
-		else{
-			println(mult);
-		}
+		
 	}
 
 }
