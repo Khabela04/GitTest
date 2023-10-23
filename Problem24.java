@@ -13,7 +13,7 @@ public class Problem24 extends ConsoleProgram {
 				divisions += 1;
 			}
 		}
-		return divisions;
+		return n;
 		
 	}
 }
