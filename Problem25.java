@@ -10,7 +10,9 @@ public class Problem25 extends ConsoleProgram {
 				println(mult/2);
 			}
 		}
-		println(mult);
+		else{
+			println(mult);
+		}
 	}
 
 }
