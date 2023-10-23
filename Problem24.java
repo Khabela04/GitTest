@@ -6,7 +6,9 @@ public class Problem24 extends ConsoleProgram {
 		int n = readInt("Give me a number: ");
 		int division = 0;
 		for(int i = 0; i < n; i++){
+			if(n % i == 0){
 			division += 1;
+			}
 		}
 		println(n+" can be divided on "+ division +" numbers");
 	}
