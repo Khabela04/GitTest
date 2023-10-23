@@ -12,12 +12,13 @@ public class Problem25 extends ConsoleProgram {
 					jer = mult/i;
 				}
 			}
-			else{
-			println(mult);
-			}
 		}
+		if(jer == 0.0){
+			println(mult);
+		}
+		else{
 		println(jer);
-		
+		}
 	}
 
 }
