@@ -8,14 +8,14 @@ public class Problem023 extends ConsoleProgram {
 		println(numberOfDivisors(n));
 	}
 
-	private int calculateSum(int n) {
+	private int calculateSum(double n) {
 		int sum = 0;
 		for(int i = 0; i <= n; i++){
 			sum += i;
 		}
 		return sum;
 	}
-	private double numberOfDivisors(int n){
+	private double numberOfDivisors(double n){
 		double num = 0;
 		for(int i = 0; i <= n; i++){
 			if (n % i == 0){
