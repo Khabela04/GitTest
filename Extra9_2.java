@@ -7,3 +7,6 @@ public class Extra9_2 extends GraphicsProgram {
 		add(new GLabel("x before method "+ x), 0, 20);
 	}
 }
+
+//SOS!!, IMPORTANT, -32
+
