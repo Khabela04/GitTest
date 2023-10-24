@@ -15,7 +15,7 @@ public class Problem023 extends ConsoleProgram {
 		}
 		return sum;
 	}
-	private int numberOfDivisors(int n){
+	private double numberOfDivisors(int n){
 		double num = 0;
 		for(int i = 0; i <= n; i++){
 			if (n % i == 0){
