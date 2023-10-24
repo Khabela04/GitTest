@@ -10,6 +10,7 @@ public class Problem025 extends ConsoleProgram {
 		int m = readInt("Enter n: ");
 		while(m<=0){
 			println("m should be >0");
+			m = readInt("Enter m: ");
 		}
 		int gcd = gcd(n, m);
 		int lcm = lcm(n,m);
