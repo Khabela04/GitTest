@@ -7,6 +7,7 @@ public class Problem28 extends ConsoleProgram {
 		int evenN = 0;
 		int n = readInt("Guess the number");
 	while(n != NUM_BER){
+		println("Guess the number");
 		if(n % 2 == 0){
 			evenN += 1;
 		}
