@@ -7,7 +7,7 @@ public class Problem29 extends ConsoleProgram {
 		println("the " + n + "th number of Fibonachi is" + fibN(n));
 	}
 
-	private int fibN(int n) {
-		return n-2+n-1;
+
+//		0, 1, 1, 2, 3, 5, 8
 	}
 }
