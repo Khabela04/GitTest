@@ -6,13 +6,13 @@ public class Problem28 extends ConsoleProgram {
 	public void run(){
 		int evenN = 0;
 		int n = readInt("Guess the number");
+		println("Guess the number");
 	while(n != NUM_BER){
 		if(n % 2 == 0){
 			evenN += 1;
 		}
 		
 	}
-	println("Guess the number");
 	println(evenN);
 	}	
 }
