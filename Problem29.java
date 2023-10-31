@@ -3,9 +3,11 @@ import acm.program.ConsoleProgram;
 //მე n წევრი.
 public class Problem29 extends ConsoleProgram {
 	public void run(){
+		while(true){
 		int n = readInt("Give me a number");
 		int fibN = fibonachi(n);
 		println(fibN);
+	}
 	}
 	private int fibonachi(int n){
 		if (n == 0 || n == 1){
