@@ -3,9 +3,16 @@ import acm.program.ConsoleProgram;
 public class Problem30 extends ConsoleProgram {
 	public void run(){
 	int num = readInt("Give me a number");
-	int first= num/1000;
-	int second = num/100-10;
-	
-	
+	int reverse = rev(num);
+	println(reverse);
+	}
+	private int rev(int n){
+		int reversedNum = 0;
+		while(n != 0){
+			int lastDigit = n % 10;
+			n /= 10;
+			reversedNum = reversedNum*10+lastDigit;
+		}
+		return reversedNum;
 	}
 }
