@@ -11,7 +11,7 @@ public class Problem030 extends ConsoleProgram {
 		while(n != 0){
 			int lastDigit = n % 10;
 			n /=10;
-			int revnum = revnum*10+lastDigit;
+			revnum = revnum*10+lastDigit;
 		}
 		return revnum;
 	}
