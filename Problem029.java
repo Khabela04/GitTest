@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 //29. მოხმარებელს შეყავს მთელი რიცხვი n, პროგრამამ უნდა დაბეჭდოს ფიბონაჩის მიმდევრობის მე n წევრი. 
 public class Problem029 extends ConsoleProgram {
 	public void run(){
-		int number = readInt("Give me a number");
+		int number = readInt("Give me a number ");
 		int fbn = fbn(number);
 		println(fbn);
 	}
