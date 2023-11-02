@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class Problem032 extends ConsoleProgram {
 	public void run(){
-		int num = readInt("Give me a number");
+		int num = readInt("Give me a number: ");
 		boolean primeN = primeN(num);
 		if(primeN){
 			println(num+" is a prime number");
