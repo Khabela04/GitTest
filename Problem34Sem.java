@@ -10,6 +10,7 @@ public class Problem34Sem extends GraphicsProgram {
 	private static final int MAX_RADIUS = 20;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
+		
 //		int a = 5;
 //		int b = rgen.nextInt();
 		
