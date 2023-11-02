@@ -21,7 +21,7 @@ public class Sem36 extends ConsoleProgram {
 		int numConsecutiveHead = 0;
 		while (true){
 			numFlips++;
-			boolean isHeads = rgen.nextBoolean();
+			boolean isHeads = rgen.nextBoolean(0.4);
 			if (isHeads){
 				numConsecutiveHead ++;
 				if(numConsecutiveHead == 3){
