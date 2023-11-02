@@ -8,9 +8,10 @@ import acm.util.RandomGenerator;
 public class Problem34Sem extends GraphicsProgram {
 	private static final int MIN_RADIUS = 10;
 	private static final int MAX_RADIUS = 20;
+	private static final int NUM_CIRCLES = 10000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
-		for(int i= 0; i<1000000; i++){
+		for(int i= 0; i<NUM_CIRCLES; i++){
 			addRandomCircle();
 		}
 //		int a = 5;
