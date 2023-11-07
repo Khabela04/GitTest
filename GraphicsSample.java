@@ -5,6 +5,7 @@ import acm.program.GraphicsProgram;
 
 public class GraphicsSample extends GraphicsProgram {
 	private static final int PAUSE_MS = 1000;
+	private static final int INITIAL_VELOCITY = 5;
 	public void run(){
 		
 //		add(new GRect(100, 200), 100, 150);
@@ -21,6 +22,14 @@ public class GraphicsSample extends GraphicsProgram {
 		oldRect.setColor(Color.GREEN);
 		pause(PAUSE_MS);
 //		oldRect.setLocation(10,10);
-		oldRect.move(100,100);
+//		oldRect.move(100,100);
+		
+		int finalX = 200;
+		while(myRect.getX() != finalX){
+			int vx = INITIAL_VELOCITY ;
+			int vy = 0;
+			myRect.move(vx, vy);
+			pause(PAUSE_MS);
+		}
 	}
 }
