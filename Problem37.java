@@ -13,7 +13,7 @@ public class Problem37 extends ConsoleProgram {
 				println("Easy pizzy you're winner with num "+ num);
 			}
 			else{
-				print(" Sorry you lose");
+				println(" Sorry you lose");
 			}
 		}
 		else{
@@ -22,7 +22,7 @@ public class Problem37 extends ConsoleProgram {
 	}}
 
 	private boolean winnerPrize(int num) {
-		int prizeNum = gran.nextInt(0, 5);
+		int prizeNum = gran.nextInt(0, 36);
 		println("the num was "+prizeNum);
 		if(prizeNum == num){
 			return true;
