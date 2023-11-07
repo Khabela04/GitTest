@@ -30,4 +30,4 @@ public class Problem035 extends ConsoleProgram {
 		}
 		return currFlips;
 	}
-}
+	}}
