@@ -10,7 +10,7 @@ public class Problem37 extends ConsoleProgram {
 		int num = readInt("Choose a number between 0 and 36");
 		if(num > 0 && num < 36){
 			if(winnerPrize(num)){
-				println("Easy pizzy you're winner with num"+ num);
+				println("Easy pizzy you're winner with num "+ num);
 			}
 			else{
 				println("Sorry you lose");
