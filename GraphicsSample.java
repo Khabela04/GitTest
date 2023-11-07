@@ -4,7 +4,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class GraphicsSample extends GraphicsProgram {
-	private static final int PAUSE_MS = 100;
+	private static final int PAUSE_MS = 50;
 	public void run(){
 		
 //		add(new GRect(100, 200), 100, 150);
