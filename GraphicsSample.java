@@ -20,7 +20,7 @@ public class GraphicsSample extends GraphicsProgram {
 		myRect.setFilled(true);
 		oldRect.setColor(Color.GREEN);
 		pause(PAUSE_MS);
-		oldRect.setLocation(10,10);
-//		oldRect.move(100,100);
+//		oldRect.setLocation(10,10);
+		oldRect.move(100,100);
 	}
 }
