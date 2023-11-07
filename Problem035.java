@@ -27,7 +27,6 @@ public class Problem035 extends ConsoleProgram {
 			else{
 				header = 0;
 			}
-		}
-		return currFlips;
-	}
+			}
+	}return currFlips;
 	}}
