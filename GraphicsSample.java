@@ -24,10 +24,10 @@ public class GraphicsSample extends GraphicsProgram {
 //		oldRect.setLocation(10,10);
 //		oldRect.move(100,100);
 		
-		int finalX = 195;
+		int finalX = 196;
 		int vx = INITIAL_VELOCITY ;
 		int vy = 0;
-		while(myRect.getX() != finalX){
+		while(myRect.getX() = finalX){
 			myRect.move(vx, vy);
 			pause(PAUSE_MS);
 		}
