@@ -9,7 +9,7 @@ public class Problem039 extends GraphicsProgram {
 	public void run(){
 		GOval myOval = new GOval(2*RADIUS, 2*RADIUS);
 		add(myOval, 0, getHeight()/2);
-		while(myOval.getX()<getWidth()){
+		while(myOval.getX()<=getWidth()){
 		pause(PAUSE);
 		myOval.move(VELOCITY_X, 0);
 	}
