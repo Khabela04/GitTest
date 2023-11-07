@@ -4,8 +4,8 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class GraphicsSample extends GraphicsProgram {
-	private static final int PAUSE_MS = 1000;
-	private static final int INITIAL_VELOCITY = 5;
+	private static final int PAUSE_MS = 20;
+	private static final int INITIAL_VELOCITY = 3;
 	public void run(){
 		
 //		add(new GRect(100, 200), 100, 150);
