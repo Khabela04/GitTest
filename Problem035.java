@@ -15,11 +15,11 @@ public class Problem035 extends ConsoleProgram {
 	private int experiments(){
 		int currFlips = 0;
 		while(true){
+			currFlips++;
 			boolean isHeads = rgen.nextBoolean();
 			if(isHeads){
 				break;
 			}
-			currFlips++;
 		}
 		return currFlips;
 	}
