@@ -25,9 +25,9 @@ public class GraphicsSample extends GraphicsProgram {
 //		oldRect.move(100,100);
 		
 		int finalX = 195;
-		while(myRect.getX() <= finalX){
-			int vx = INITIAL_VELOCITY ;
-			int vy = 0;
+		int vx = INITIAL_VELOCITY ;
+		int vy = 0;
+		while(myRect.getX() != finalX){
 			myRect.move(vx, vy);
 			pause(PAUSE_MS);
 		}
