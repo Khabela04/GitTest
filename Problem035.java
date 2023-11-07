@@ -23,10 +23,11 @@ public class Problem035 extends ConsoleProgram {
 			
 			if(header==3){
 				break;
-			}
+			}}
 			else{
 				header = 0;
 			}
 			}
-	}return currFlips;
+	
+		return currFlips;
 	}}
