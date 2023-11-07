@@ -21,7 +21,7 @@ public class Problem035 extends ConsoleProgram {
 			if(isHeads){
 				header++;
 			}
-			if(isHeads=3){
+			if(header==3){
 				break;
 			}
 		}
