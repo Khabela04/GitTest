@@ -23,6 +23,7 @@ public class Problem37 extends ConsoleProgram {
 
 	private boolean winnerPrize(int num) {
 		int prizeNum = gran.nextInt(0, 5);
+		println("the num was "+prizeNum);
 		if(prizeNum == num){
 			return true;
 		}
