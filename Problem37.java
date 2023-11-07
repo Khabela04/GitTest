@@ -6,6 +6,7 @@ import acm.util.RandomGenerator;
 public class Problem37 extends ConsoleProgram {
 	private RandomGenerator gran = RandomGenerator.getInstance();
 	public void run(){
+		while(true){
 		int num = readInt("Choose a number between 0 and 36");
 		if(num > 0 && num < 36){
 			if(winnerPrize(num)){
@@ -18,7 +19,7 @@ public class Problem37 extends ConsoleProgram {
 		else{
 			println("Wrong number");
 		}
-	}
+	}}
 
 	private boolean winnerPrize(int num) {
 		int prizeNum = gran.nextInt(0, 5);
