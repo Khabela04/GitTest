@@ -10,10 +10,10 @@ public class Problem035 extends ConsoleProgram {
 		for( int i = 0; i < NUM_EXPERIMENTS; i++){
 			sumFlips ++;
 			if (isHeads()){
-				curFlips++;
+				break;
 			}
 		}
-		double avg = curFlips/sumFlips;
+		double avg = sumFlips/1000;
 		println(avg);
 	}
 	private boolean isHeads(){
