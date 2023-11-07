@@ -13,7 +13,7 @@ public class Problem37 extends ConsoleProgram {
 				println("Easy pizzy you're winner with num "+ num);
 			}
 			else{
-				println("Sorry you lose");
+				print(" Sorry you lose");
 			}
 		}
 		else{
