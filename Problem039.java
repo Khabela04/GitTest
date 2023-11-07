@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.GOval;
 import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
@@ -9,6 +11,8 @@ public class Problem039 extends GraphicsProgram {
 	public void run(){
 		GOval myOval = new GOval(2*RADIUS, 2*RADIUS);
 		add(myOval, 0, getHeight()/2-RADIUS);
+		myOval.setFilled(true);
+		myOval.setColor(Color.BLUE);
 		for(int i = 0; i < 25; i++){
 		while(myOval.getX() + 2*RADIUS <= getWidth()){
 		pause(PAUSE);
