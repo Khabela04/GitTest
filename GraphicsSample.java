@@ -16,7 +16,7 @@ public class GraphicsSample extends GraphicsProgram {
 //		add(secondRect, 300, 100);
 		GRect oldRect = myRect;
 		myRect = new GRect(100, 200);
-		add(myRect, 300, 150);
+		add(myRect, 100, 150);
 		oldRect.setFilled(true);
 		myRect.setFilled(true);
 		oldRect.setColor(Color.GREEN);
@@ -27,7 +27,7 @@ public class GraphicsSample extends GraphicsProgram {
 		int finalX = 196;
 		int vx = INITIAL_VELOCITY ;
 		int vy = 0;
-		while(myRect.getX() > finalX){
+		while(myRect.getX() != finalX){
 			myRect.move(vx, vy);
 			pause(PAUSE_MS);
 		}
