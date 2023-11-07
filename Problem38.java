@@ -9,5 +9,7 @@ import acm.util.RandomGenerator;
 
 public class Problem38 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	public void run()
+	public void run(){
+		
+	}
 }
