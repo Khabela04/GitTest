@@ -20,9 +20,12 @@ public class Problem035 extends ConsoleProgram {
 			boolean isHeads = rgen.nextBoolean();
 			if(isHeads){
 				header++;
-			}
+			
 			if(header==3){
 				break;
+			}
+			else{
+				header = 0;
 			}
 		}
 		return currFlips;
