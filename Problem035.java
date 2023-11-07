@@ -16,8 +16,12 @@ public class Problem035 extends ConsoleProgram {
 		int currFlips = 0;
 		while(true){
 			currFlips++;
+			int header = 0;
 			boolean isHeads = rgen.nextBoolean();
 			if(isHeads){
+				header++;
+			}
+			if(isHeads=3){
 				break;
 			}
 		}
