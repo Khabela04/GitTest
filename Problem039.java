@@ -13,7 +13,7 @@ public class Problem039 extends GraphicsProgram {
 		pause(PAUSE);
 		myOval.move(VELOCITY_X, 0);
 	}
-		while(myOval.getX()+2*RADIUS > 0){
+		while(myOval.getX()-2*RADIUS > 0){
 			pause(PAUSE);
 			myOval.move(-VELOCITY_X, 0);
 		}
