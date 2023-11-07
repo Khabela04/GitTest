@@ -19,6 +19,6 @@ public class GraphicsSample extends GraphicsProgram {
 		myRect.setFilled(true);
 		oldRect.setColor(Color.GREEN);
 //		oldRect.setLocation(10,10);
-		oldRect.move(10,10);
+		oldRect.move(100,100);
 	}
 }
