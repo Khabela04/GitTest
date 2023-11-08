@@ -18,18 +18,17 @@ public class Problem039 extends GraphicsProgram {
 		while (myOval.getX() + 2 * RADIUS <= getWidth()) {
 			pause(PAUSE);
 			myOval.move(VELOCITY_X, 0);
-			for (int j = 0; j < 100; j++) {
-				GOval Oval = new GOval(2 * RADIUS, 2 * RADIUS);
-				int y = rgen.nextInt(0, getHeight()- 2*RADIUS);
-				add(Oval, 0, y);
-				int vx = rgen.nextInt();
-				Oval.move(vx, 0);
-				Oval.setFilled(true);
-				Oval.setColor(Color.BLUE);
+//			for (int j = 0; j < 100; j++) {
+//				GOval Oval = new GOval(2 * RADIUS, 2 * RADIUS);
+//				int y = rgen.nextInt(0, getHeight()- 2*RADIUS);
+//				add(Oval, 0, y);
+//				int vx = rgen.nextInt();
+//				Oval.move(vx, 0);
+//				Oval.setFilled(true);
+//				Oval.setColor(Color.BLUE);
 			
 			}
-		/*
-		for (int i = 0; i < 25; i++) {
+		
 			while (myOval.getX() + 2 * RADIUS <= getWidth()) {
 				pause(PAUSE);
 				myOval.move(VELOCITY_X, 0);
@@ -43,7 +42,7 @@ public class Problem039 extends GraphicsProgram {
 					Oval.setColor(Color.BLUE);
 				
 				}
-			}*/
+			}
 			while (myOval.getX() > 0) {
 				pause(PAUSE);
 				myOval.move(-VELOCITY_X, 0);
