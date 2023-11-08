@@ -28,7 +28,7 @@ public class Problem039 extends GraphicsProgram {
 				Oval.setColor(Color.BLUE);
 			
 			}
-		
+		/*
 		for (int i = 0; i < 25; i++) {
 			while (myOval.getX() + 2 * RADIUS <= getWidth()) {
 				pause(PAUSE);
@@ -43,7 +43,7 @@ public class Problem039 extends GraphicsProgram {
 					Oval.setColor(Color.BLUE);
 				
 				}
-			}
+			}*/
 			while (myOval.getX() > 0) {
 				pause(PAUSE);
 				myOval.move(-VELOCITY_X, 0);
