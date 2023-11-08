@@ -49,4 +49,4 @@ public class Problem039 extends GraphicsProgram {
 			}
 		}
 	}
-}
+
