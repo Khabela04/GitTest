@@ -8,7 +8,6 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class GraphicsEventsSample extends GraphicsProgram {
-	System.out.println("here")
 	public void run(){
 		GRect rect = new GRect(100, 100);
 		rect.setFilled(true);
@@ -22,6 +21,7 @@ public class GraphicsEventsSample extends GraphicsProgram {
 	}
 	
 	public void mouseClicked(MouseEvent e){
+		System.out.println("here");
 		e.getX();
 		GObject obj = getElementAt(e.getX(), e.getY());
 		
