@@ -8,6 +8,7 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class GraphicsEventsSample extends GraphicsProgram {
+	System.out.println("here")
 	public void run(){
 		GRect rect = new GRect(100, 100);
 		rect.setFilled(true);
