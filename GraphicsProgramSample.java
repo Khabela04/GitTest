@@ -12,6 +12,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	
 	public void run() {
 		add(new GLabel("hello, world", 20, 20));
+		add(new GOval(40,40), 20, 20);
+		addMouseSounds();
 	}
 
 }
