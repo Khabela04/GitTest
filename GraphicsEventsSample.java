@@ -21,6 +21,7 @@ public class GraphicsEventsSample extends GraphicsProgram {
 		rect2.setFilled(true);
 		add(rect2, 200, 200);
 		label = new GLabel("waiting for a key");
+		add (label, getWidth()/2, getHeight()/2);
 		addMouseListeners();
 		addKeyListeners();
 	}
