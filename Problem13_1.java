@@ -15,8 +15,8 @@ public class Problem13_1 extends GraphicsProgram {
 		ball.setColor(rgen.nextColor());
 		add(ball, getWidth()/2- RADIUS, getHeight()/2 - RADIUS);
 		
-		double vx = rgen.nextDouble(1, V_X_MAX);
-		double vy = rgen.nextDouble(1, V_Y_MAX);
+		double vx = rgen.nextDouble(-V_X_MAX, V_X_MAX);
+		double vy = rgen.nextDouble(-V_Y_MAX, V_Y_MAX);
 		while(true){
 			ball.move(vx, vy);
 			pause(DELAY);
