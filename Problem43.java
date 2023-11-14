@@ -4,7 +4,7 @@ import acm.program.GraphicsProgram;
 import javafx.scene.input.MouseEvent;
 //43. წრეწირის drag ით გადაადგილება 
 public class Problem43 extends GraphicsProgram {
-	GOval o;
+	private GOval o;
 	private static final int RADIUS = 50;
 	private double prevX;
 	private double prevY;
