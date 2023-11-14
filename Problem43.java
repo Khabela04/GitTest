@@ -15,6 +15,15 @@ public class Problem43 extends GraphicsProgram {
 		addMouseListeners();
 		
 	}
+	public void mousePressed(MouseEvent e){
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj != null){
+//			move
+//			update value
+			prevX = e.getX();
+			prevY = e.getY();
+		}
+	}
 	public void mouseDragged(MouseEvent e){
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if(obj != null){
@@ -25,14 +34,6 @@ public class Problem43 extends GraphicsProgram {
 			prevY = e.getY();
 		}
 	}
-	public void mousePressed(MouseEvent e){
-		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj != null){
-//			move
-//			update value
-			prevX = e.getX();
-			prevY = e.getY();
-		}
-	}
+
 	
 }
