@@ -10,8 +10,8 @@ public class Problem43 extends GraphicsProgram {
 	private double prevY;
 	public void run(){
 		o = new GOval(2*RADIUS, 2*RADIUS);
-		add(o, getWidth()/2-RADIUS, getHeight() / 2 - RADIUS);
 		o.setFilled(true);
+		add(o, getWidth()/2-RADIUS, getHeight() / 2 - RADIUS);
 		addMouseListeners();
 		
 	}
