@@ -19,7 +19,7 @@ public class Problem41 extends GraphicsProgram {
 		int y = e.getY() -RADIUS;
 		add(brush, x, y);
 	}
-	public void mousePressed(MouseEvent e){
+	public void mouseClicked(MouseEvent e){
 		addBrush(e.getX(), e.getY());
 	}
 	private void addBrush(int centerX, int centerY){
