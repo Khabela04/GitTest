@@ -1,7 +1,9 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
-import javafx.scene.input.MouseEvent;
+
 //43. წრეწირის drag ით გადაადგილება 
 public class Problem43 extends GraphicsProgram {
 	private GOval o;
@@ -24,6 +26,7 @@ public class Problem43 extends GraphicsProgram {
 		}
 	
 	public void mouseDragged(MouseEvent e){
+		GObject obj = getElementAt(e.getX(), e.getY());
 //			move
 			obj.move(e.getX()-prevX, e.getY()-prevY);
 //			update value
