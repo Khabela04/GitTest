@@ -25,15 +25,14 @@ public class Problem43 extends GraphicsProgram {
 			prevY = e.getY();
 		}
 	}
-//	public void mousePressed(MouseEvent e){
-//		GObject obj = getElementAt(e.getX(), e.getY());
-//		if(obj != null){
-////			move
-//			obj.move(e.getX()-prevX, e.getY()-prevY);
-////			update value
-//			prevX = e.getX();
-//			prevY = e.getY();
-//		}
-//	}
+	public void mousePressed(MouseEvent e){
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj != null){
+//			move
+//			update value
+			prevX = e.getX();
+			prevY = e.getY();
+		}
+	}
 	
 }
