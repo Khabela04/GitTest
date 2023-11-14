@@ -8,6 +8,7 @@ public class Problem42 extends GraphicsProgram {
 	private GLine line;
 	public void run(){
 		addMouseListeners();
+		add(line);
 	}
 	@Override
 	public void mousePressed(MouseEvent e){
