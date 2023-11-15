@@ -3,7 +3,7 @@ import acm.util.RandomGenerator;
 //35. თქვენი ამოცანაა გააკეთოთ მონეტის აგდების სიმულაციები და დათვალოთ საშუალოდ რამდენჯერ უნდა ავაგდოთ მონეტა რათა ამოვიდეს ბორჯღალო 
 public class Pr35 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	int numFlips;
+	int numFlips = 0;
 	public void run(){
 		tossACoin();
 		for(int i = 0; i < 1000; i++){
