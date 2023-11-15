@@ -20,11 +20,8 @@ public class Pr36 extends ConsoleProgram {
 		boolean revSide = rgen.nextBoolean();
 		numFlips ++;
 		if(revSide){
-			revSide = rgen.nextBoolean();
 			if(revSide){
-				revSide = rgen.nextBoolean();
 				if(revSide){
-					revSide = rgen.nextBoolean();
 				break;
 			}
 			}
