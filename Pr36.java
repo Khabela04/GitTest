@@ -6,6 +6,7 @@ public class Pr36 extends ConsoleProgram {
 	int numFlips = 0;
 	int curFlips;
 	int sumFlips;
+	int tailsCount;
 	public void run(){
 		tossACoin();
 		for(int i = 0; i < 10000; i++){
@@ -16,14 +17,14 @@ public class Pr36 extends ConsoleProgram {
 	}
 	private int tossACoin(){
 		numFlips = 0;
+		tailsCount = 0;
 		while(true){
 		boolean revSide = rgen.nextBoolean();
 		numFlips ++;
 		if(revSide){
-			if(rgen.nextBoolean()){
-				if(rgen.nextBoolean()){
+			tailsCount ++;
+			if(tailsCount ==3){
 				break;
-			}
 			}
 		}
 	}
