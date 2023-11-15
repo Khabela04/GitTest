@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 
 //39. დაწერეთ პროგრამა სადაც იქნება კანვასზე ბურთის მოძრაობა მარცხენა კედლის შუა წერტილიდან მარჯვენა კედლამდე. 
 public class Pr39 extends GraphicsProgram {
-	private static final int DELAY = 2;
+	private static final int DELAY = 100;
 	private static final int MIN_RADIUS = 20;
 	private static final int MAX_RADIUS = 40;
 	private int V_X;
