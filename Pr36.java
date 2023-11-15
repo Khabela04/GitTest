@@ -11,7 +11,7 @@ public class Pr36 extends ConsoleProgram {
 		for(int i = 0; i < 10000; i++){
 			sumFlips += tossACoin();
 		}
-		double avg = (double)(sumFlips)/10000;
+		double avg = (double)(sumFlips)/3*10000;
 		println(avg);
 	}
 	private int tossACoin(){
