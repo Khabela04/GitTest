@@ -10,9 +10,11 @@ public class Pr32 extends ConsoleProgram {
 					COUNT ++;
 				}
 			}
+			
 			if(COUNT < 2){
 				println(i);
 			}
+			COUNT = 0;
 		}
 	}
 }
