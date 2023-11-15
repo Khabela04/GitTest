@@ -8,12 +8,12 @@ public class Pr35 extends ConsoleProgram {
 		tossACoin();
 		for(int i = 0; i < 10000; i++){
 			tossACoin();
-			numFlips = 0;
 		}
 		double avg = (double)(numFlips)/1000;
 		println(avg);
 	}
 	private int tossACoin(){
+		numFlips = 0;
 		while(true){
 		boolean revSide = rgen.nextBoolean();
 		if(revSide){
