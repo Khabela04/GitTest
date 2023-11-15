@@ -15,13 +15,12 @@ public class Pr35 extends ConsoleProgram {
 	private int tossACoin(){
 		while(true){
 		boolean revSide = rgen.nextBoolean();
-		if(!revSide){
+		if(revSide){
 			numFlips ++;
 		}
 		else{
 			return numFlips;
 		}
-		return numFlips;
 	}
 	}
 }
