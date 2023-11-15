@@ -26,6 +26,9 @@ public class Pr36 extends ConsoleProgram {
 			if(tailsCount ==3){
 				break;
 			}
+			else{
+				tailsCount = 0;
+			}
 		}
 	}
 			return numFlips;
