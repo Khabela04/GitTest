@@ -8,9 +8,9 @@ public class Problem33 extends GraphicsProgram {
 	private static final int MAX_RADIUS = 20;
 	GOval o;
 	public void run(){
-		o = new GOval(2 * rgen.nextInt(10, 20), 2 * rgen.nextInt(10, 20));
+		o = new GOval(2 * rgen.nextInt(MIN_RADIUS, MAX_RADIUS), 2 * rgen.nextInt(MIN_RADIUS, MAX_RADIUS));
 		o.setFilled(true);
 		o.setColor(rgen.nextColor());
-		add(o);
+		add(o, 20, 40);
 	}
 }
