@@ -9,8 +9,8 @@ public class Pr35 extends ConsoleProgram {
 	public void run(){
 		tossACoin();
 		for(int i = 0; i < 10000; i++){
-			curFlips = tossACoin();
-			sumFlips += curFlips;
+			sumFlips += tossACoin();
+//			sumFlips += curFlips;
 		}
 		double avg = (double)(sumFlips)/10000;
 		println(avg);
@@ -19,7 +19,7 @@ public class Pr35 extends ConsoleProgram {
 		numFlips = 0;
 		while(true){
 		boolean revSide = rgen.nextBoolean();
-			numFlips ++;
+		numFlips ++;
 		if(revSide){
 			break;
 		}
