@@ -4,12 +4,13 @@ import acm.util.RandomGenerator;
 public class Pr35 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	int numFlips = 0;
+	int sumFlips;
 	public void run(){
 		tossACoin();
 		for(int i = 0; i < 10000; i++){
-			tossACoin();
+			sumFlips += tossACoin();
 		}
-		double avg = (double)(numFlips)/1000;
+		double avg = (double)(sumFlips)/1000;
 		println(avg);
 	}
 	private int tossACoin(){
