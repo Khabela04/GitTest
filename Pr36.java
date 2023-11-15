@@ -23,7 +23,10 @@ public class Pr36 extends ConsoleProgram {
 			revSide = rgen.nextBoolean();
 			if(revSide){
 				revSide = rgen.nextBoolean();
+				if(revSide){
+					revSide = rgen.nextBoolean();
 				break;
+			}
 			}
 		}
 	}
