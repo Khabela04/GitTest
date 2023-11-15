@@ -6,7 +6,7 @@ public class Pr35 extends ConsoleProgram {
 	int numFlips = 0;
 	public void run(){
 		tossACoin();
-		for(int i = 0; i < 1000; i++){
+		for(int i = 0; i < 10000; i++){
 			tossACoin();
 		}
 		double avg = (double)(numFlips)/1000;
