@@ -5,7 +5,7 @@ public class Pr32 extends ConsoleProgram {
 	private int COUNT = 0;
 	public void run(){
 		for(int i = 1; i < NUM; i++){
-			for(int j = 1; j < Math.sqrt(NUM); j++){
+			for(int j = 1; j < i; j++){
 				if(i % j == 0){
 					COUNT ++;
 				}
