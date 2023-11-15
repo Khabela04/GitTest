@@ -23,7 +23,7 @@ public class Pr39 extends GraphicsProgram {
 		add(ball, 0, (getHeight()- 2 * radius)/2);
 	}
 	private void moveBall(){
-		V_X = rgen.nextInt(2,10);
+		V_X = rgen.nextInt(20,50);
 		while(ball.getX() + 2 * radius< getWidth()){
 			ball.move(V_X, 0);
 			pause(DELAY);
