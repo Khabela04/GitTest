@@ -10,6 +10,7 @@ public class Pr35 extends ConsoleProgram {
 			tossACoin();
 		}
 		int avg = numFlips/1000;
+		println(avg);
 	}
 	private int tossACoin(){
 		while(true){
