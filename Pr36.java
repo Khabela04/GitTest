@@ -19,7 +19,7 @@ public class Pr36 extends ConsoleProgram {
 		numFlips = 0;
 		tailsCount = 0;
 		while(true){
-		boolean revSide = rgen.nextBoolean();
+		boolean revSide = rgen.nextBoolean(0.05);
 		numFlips ++;
 		if(revSide){
 			tailsCount ++;
