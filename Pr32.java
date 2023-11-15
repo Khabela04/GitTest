@@ -4,7 +4,7 @@ public class Pr32 extends ConsoleProgram {
 	private static final int NUM = 1000000;
 	private int COUNT = 0;
 	public void run(){
-		for(int i = 1; i < NUM; i++){
+		for(int i = 1; i < Math.sqrt(NUM); i++){
 			for(int j = 1; j < i; j++){
 				if(i % j == 0){
 					COUNT ++;
