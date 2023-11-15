@@ -19,12 +19,11 @@ public class Pr35 extends ConsoleProgram {
 		numFlips = 0;
 		while(true){
 		boolean revSide = rgen.nextBoolean();
-		if(revSide){
 			numFlips ++;
-		}
-		else{
-			return numFlips;
+		if(revSide){
+			break;
 		}
 	}
+		return numFlips;
 	}
 }
