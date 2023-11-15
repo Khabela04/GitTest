@@ -11,6 +11,6 @@ public class Problem33 extends GraphicsProgram {
 		o = new GOval(2 * rgen.nextInt(MIN_RADIUS, MAX_RADIUS), 2 * rgen.nextInt(MIN_RADIUS, MAX_RADIUS));
 		o.setFilled(true);
 		o.setColor(rgen.nextColor());
-		add(o, 20, 40);
+		add(o, 20, 400);
 	}
 }
