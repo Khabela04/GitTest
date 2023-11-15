@@ -14,7 +14,6 @@ public class Pr39 extends GraphicsProgram {
 	public void run(){
 		addBall();
 		moveBall();
-		pause(DELAY);
 	}
 	private void addBall(){
 		radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
@@ -27,6 +26,7 @@ public class Pr39 extends GraphicsProgram {
 		V_X = rgen.nextInt(2,10);
 		while(ball.getX() + 2 * radius< getWidth()){
 			ball.move(V_X, 0);
+			pause(DELAY);
 		}
 	}
 }
