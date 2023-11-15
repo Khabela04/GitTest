@@ -12,7 +12,7 @@ public class Pr35 extends ConsoleProgram {
 			curFlips = tossACoin();
 			sumFlips += curFlips;
 		}
-		double avg = (double)(sumFlips)/1000;
+		double avg = (double)(sumFlips)/10000;
 		println(avg);
 	}
 	private int tossACoin(){
