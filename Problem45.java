@@ -13,7 +13,7 @@ public class Problem45 extends ConsoleProgram {
 				counter++;
 			}
 		}
-		println("This symbol is used" + counter + "th time");
+		println("This symbol is used for " + counter + " th time");
 	}
 }
 
