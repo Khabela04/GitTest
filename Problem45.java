@@ -13,6 +13,7 @@ public class Problem45 extends ConsoleProgram {
 				counter++;
 			}
 		}
+		println(counter);
 	}
 }
 
