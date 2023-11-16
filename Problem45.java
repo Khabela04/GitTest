@@ -8,7 +8,8 @@ public class Problem45 extends ConsoleProgram {
 		String symb = readLine("Give me a symbol: ");
 		char symbol = symb.charAt(0);
 		for(int i = 0; i < text.length(); i++){
-			if(symbol == i){
+			char index = text.charAt(i);
+			if(symbol == index){
 				counter++;
 			}
 		}
