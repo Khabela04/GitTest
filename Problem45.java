@@ -5,12 +5,11 @@ public class Problem45 extends ConsoleProgram {
 	int counter;
 	public void run(){
 		String text = readLine("Give me a text: ");
-		char symb = readLine("Give me a symbol: ");
+		String symb = readLine("Give me a symbol: ");
 		for(int i = 0; i < text.length(); i++){
 			char charect = text.charAt(i);
-			if(charect == symb){
-				counter++;
-			}
+			symb == (String)(charect);
+			
 		}
 	}
 }
