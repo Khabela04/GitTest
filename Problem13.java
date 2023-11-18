@@ -7,5 +7,6 @@ public class Problem13 extends GraphicsProgram {
 		int height = getHeight();
 		int width = getWidth();
 		add(new GLine(0, height / 2, width, height / 2));
+		
 	}
 }
