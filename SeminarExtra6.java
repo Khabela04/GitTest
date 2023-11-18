@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 //შემოსვლის შემდეგ დაბეჭდეთ შემოსული რიცხვების ჯამი.
 
 public class SeminarExtra6 extends ConsoleProgram {
-	private static final int GOLDEN_NUMBER = 5;
+	private static final int GOLDEN_NUMBER = 2;
 	public void run(){
 		int sum =0;
 		while(true){
@@ -12,7 +12,7 @@ public class SeminarExtra6 extends ConsoleProgram {
 					sum+= number;
 		}
 		println(sum);
-		println(GOLDEN_NUMBER % 2);
+		println(GOLDEN_NUMBER % 5);
 		}
 
 }
