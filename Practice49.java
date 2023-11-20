@@ -7,6 +7,7 @@ public class Practice49 extends ConsoleProgram {
 	public void run(){
 		String txt = readLine("Give me a number: ");
 		int num = stringToInteger(txt);
+		println(num);
 	}
 
 	private int stringToInteger(String txt) {
