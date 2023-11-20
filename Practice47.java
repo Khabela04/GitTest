@@ -5,9 +5,9 @@ public class Practice47 extends ConsoleProgram {
 	public void run(){
 		String text = readLine("Give me a word: ");
 		if(isPallyndrom(text)){
-			println(text + " is a palyndrom");
+			println("The word" + text + " is a palyndrom");
 		} else{
-			println(text + " isn't a palyndrom");
+			println("The word" + text + " isn't a palyndrom");
 		}
 	}
 
