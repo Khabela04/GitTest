@@ -13,11 +13,13 @@ public class Practice47 extends ConsoleProgram {
 
 	private boolean isPallyndrom(String text) {
 		for(int i = 0; i < text.length(); i++){
-			char charecter1 = (char)(text.charAt(i));
-			char charecter2 = (char)(text.charAt(text.length() - 1 - i));
-			if(charecter1 == charecter2){
-				return true;
-			}
+			char charecter1 = text.charAt(i);
+			char charecter2 = text.charAt(text.length() - 1 - i);
+			if(charecter1 > 'a' && charecter1 < 'a' + 26 && charecter1 > 'A' && charecter1 > 'A' + 26 && charecter2 > 'a' && charecter2 < 'a'+26 && charecter2 > 'A' && charecter2 > 'A'+26){
+				if(charecter1 == charecter2){
+					return true;
+				}
+			} 
 		}
 		return false;
 	}
