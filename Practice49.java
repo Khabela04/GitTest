@@ -17,7 +17,7 @@ public class Practice49 extends ConsoleProgram {
 			char charecter = txt.charAt(i);
 			int num = (charecter - '0') ;
 			finalNum = prev * 10 + num;
-			prev = num;
+			prev = finalNum;
 		}
 		println(finalNum);
 		return 0;
