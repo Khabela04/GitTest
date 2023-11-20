@@ -4,6 +4,8 @@ import acm.program.ConsoleProgram;
 //ჩათვალეთ, რომ გადაცემული სტრინგი მხოლოდ ციფრებისგან შედგება და არ იწყება 0-ით.  მაგალითად “234” გადაცემის შემთხვევაში მეთოდმა უნდა დააბრუნოს 234.
 //ასევე ჩათვალეთ,  რომ დაბრუნებული მნიშვნელობა დადებითია და ეტევა int-ში. 
 public class Practice49 extends ConsoleProgram {
+	int prev;
+	int finalNum;
 	public void run(){
 		String txt = readLine("Give me a number: ");
 		stringToInteger(txt);
@@ -14,9 +16,10 @@ public class Practice49 extends ConsoleProgram {
 		for(int i = 0; i < txt.length(); i++){
 			char charecter = txt.charAt(i);
 			int num = (charecter - '0') ;
-			println(num);
-			
+			finalNum = prev * 10 + num;
+			prev = num;
 		}
+		println(finalNum);
 		return 0;
 	}
 }
