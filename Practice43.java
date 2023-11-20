@@ -5,7 +5,7 @@ import acm.program.GraphicsProgram;
 
 //43. წრეწირის drag ით გადაადგილება 
 public class Practice43 extends GraphicsProgram {
-	private static final int RADIUS = 5;
+	private static final int RADIUS = 30;
 	GOval oval;
 	public void run(){
 		createOval();
