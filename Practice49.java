@@ -6,15 +6,16 @@ import acm.program.ConsoleProgram;
 public class Practice49 extends ConsoleProgram {
 	public void run(){
 		String txt = readLine("Give me a number: ");
-		int num = stringToInteger(txt);
-		println(num);
+		stringToInteger(txt);
+		
 	}
 
 	private int stringToInteger(String txt) {
 		for(int i = 0; i < txt.length(); i++){
 			char charecter = txt.charAt(i);
-			int n = charecter - '0';
-			return n;
+			int num = (charecter - '0') ;
+			println(num);
+			
 		}
 		return 0;
 	}
