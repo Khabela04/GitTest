@@ -19,7 +19,7 @@ public class Practice49 extends ConsoleProgram {
 			finalNum = prev * 10 + num;
 			prev = finalNum;
 		}
-		println(finalNum+100);
+		println(finalNum);
 		return 0;
 	}
 }
