@@ -12,7 +12,6 @@ public class Practice47 extends ConsoleProgram {
 	}
 
 	private boolean isPallyndrom(String text) {
-		String textExample = text;
 		for(int i = 0; i < text.length(); i++){
 			char charecter1 = text.charAt(i);
 			char charecter2 = text.charAt(text.length() - 1 - i);
