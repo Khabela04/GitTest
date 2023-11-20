@@ -5,7 +5,7 @@ public class Practice48 extends ConsoleProgram {
 	int counter;
 	public void run(){
 		String input = readLine("Give me a word: ");
-		println(statistics(input));
+		statistics(input);
 	}
 
 	private String statistics(String input) {
@@ -13,7 +13,7 @@ public class Practice48 extends ConsoleProgram {
 			char charecter1 = input.charAt(i);
 			int n = charrecter(input, charecter1);
 			println(charecter1 + " was" + n);
-		}}
+		}
 		
 		return null;
 	}
