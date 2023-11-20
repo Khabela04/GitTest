@@ -8,13 +8,12 @@ public class Practice49 extends ConsoleProgram {
 		String txt = readLine("Give me a number: ");
 		int num = stringToInteger(txt);
 		println(num);
-		println((int)((char)(3)));
 	}
 
 	private int stringToInteger(String txt) {
 		for(int i = 0; i < txt.length(); i++){
 			char charecter = txt.charAt(i);
-			int n = (int)(charecter);
+			int n = charecter - '0';
 			return n;
 		}
 		return 0;
