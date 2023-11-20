@@ -16,6 +16,6 @@ public class Practice43 extends GraphicsProgram {
 		add(oval, (getWidth() - 2 * RADIUS) / 2, (getHeight() - 2 * RADIUS) / 2); 
 	}
 	public void mouseDragged(MouseEvent e){
-		oval.setLocation(oval.getX() + RADIUS, oval.getX() + RADIUS );
+		oval.setLocation(oval.getX() + RADIUS, oval.getY() + RADIUS );
 	}
 }
