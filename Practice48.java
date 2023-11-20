@@ -12,7 +12,7 @@ public class Practice48 extends ConsoleProgram {
 		for(int i = 0; i < input.length(); i++){
 			char charecter1 = input.charAt(i);
 			int n = charrecter(input, charecter1);
-			println(charecter1 + " was" + n +"th time" );
+			println(charecter1 + " was" + n);
 		}
 		
 		return null;
