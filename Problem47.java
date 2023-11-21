@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 //47. დაწერეთ პრედიკატ მეთოდი რომელსაც გადაეცემა სტრინგი და რომელიც დაადგენს არის თუ არა მოცემული ტექსტი პალინდრომი 
 public class Problem47 extends ConsoleProgram {
 	public void run(){
-		String text = "rogor";
+		String text = "raana";
 		boolean isPalindrom = isPalindrom(text);
 		println(text + " is palindrome: " + isPalindrom);
 	}
