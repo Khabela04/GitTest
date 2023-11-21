@@ -5,7 +5,7 @@ public class Problem47 extends ConsoleProgram {
 	public void run(){
 		String text = "mariami";
 		boolean isPalindrom = isPalindrom(text);
-		println(text + "is palindrome: " + isPalindrom);
+		println(text + " is palindrome: " + isPalindrom);
 	}
 
 	private boolean isPalindrom(String text) {
