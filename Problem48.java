@@ -13,6 +13,7 @@ public class Problem48 extends ConsoleProgram {
 			if(isFirstOccurance(text, i )){
 				int count = counter(text, currCh);
 				println(currCh + " is used " + count);
+				counter = 0;
 		}
 			}
 		
