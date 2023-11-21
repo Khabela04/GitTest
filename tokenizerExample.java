@@ -4,7 +4,7 @@ import acm.program.ConsoleProgram;
 
 public class tokenizerExample extends ConsoleProgram {
 	public void run(){
-		String name = "Saba. \n Magaria";
+		String name = "Saba.Magaria";
 		StringTokenizer tokenizer = new StringTokenizer(name, ".,");
 		while(tokenizer.hasMoreTokens()){
 			println(tokenizer.nextToken());
