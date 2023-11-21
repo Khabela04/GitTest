@@ -9,11 +9,22 @@ public class Problem48 extends ConsoleProgram {
 
 	private void printCharStatistics(String text) {
 		for(int i = 0; i < text.length(); i++){
-			int count = counter(text, text.charAt(i));
-			println(text.charAt(i) + "is used " + count);
+			char currCh = text.charAt(i);
+			int count = counter(text, currCh);
+			if(isFirstOccurance(text, i )){
+				break;
 		}
+			println(currCh + " is used " + count);
+			}
 		
 	}
+	private boolean isFirstOccurance(String text, int i) {
+		if(text.indexOf(text.charAt(i)) != i){
+			return true;
+		};
+		return false;
+	}
+
 	private int counter(String text, char symbol){
 		for (int i = 0; i < text.length(); i++) {
 			char index = text.charAt(i);
