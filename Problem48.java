@@ -10,7 +10,7 @@ public class Problem48 extends ConsoleProgram {
 	private void printCharStatistics(String text) {
 		for(int i = 0; i < text.length(); i++){
 			int count = counter(text, text.charAt(i));
-			print(text.charAt(i) + "is used " + count);
+			println(text.charAt(i) + "is used " + count);
 		}
 		
 	}
