@@ -21,7 +21,7 @@ public class Problem48 extends ConsoleProgram {
 	private boolean isFirstOccurance(String text, int i) {
 		if(text.indexOf(text.charAt(i)) != i){
 			return true;
-		};
+		}
 		return false;
 	}
 
