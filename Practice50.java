@@ -11,5 +11,6 @@ public class Practice50 extends ConsoleProgram {
 		while(tokenizer.hasMoreTokens()){
 			count++;
 		}
+		println(count);
 	}
 }
