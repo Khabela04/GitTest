@@ -9,6 +9,7 @@ public class Practice50 extends ConsoleProgram {
 		String text = readLine("Input a text: ");
 		StringTokenizer tokenizer = new StringTokenizer(text);
 		while(tokenizer.hasMoreTokens()){
+			tokenizer.nextToken();
 			count++;
 		}
 		println(count);
