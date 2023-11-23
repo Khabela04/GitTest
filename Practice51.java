@@ -10,7 +10,6 @@ public class Practice51 extends ConsoleProgram {
 		for(int i = 0; i < text.length(); i++){
 			if(text.indexOf(text.charAt(i)) == i){
 				println(text.charAt(i));
-			text.concat(""+text.charAt(i));
 			}
 		}
 		println(blank);
