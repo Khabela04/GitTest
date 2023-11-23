@@ -9,9 +9,10 @@ public class Practice51 extends ConsoleProgram {
 		String blank = "";
 		for(int i = 0; i < text.length(); i++){
 			if(text.indexOf(text.charAt(i)) == i){
-			text.concat(""+text.charAt(i));
+			blank.concat(""+text.charAt(i));
 			}
 		}
+		println(blank);
 	}	
 }
 
