@@ -8,6 +8,7 @@ public class Practice50 extends ConsoleProgram {
 	public void run(){
 		String text = readLine("Input a text: ");
 		StringTokenizer tokenizer = new StringTokenizer(text);
+		println(tokenizer.countTokens());
 		while(tokenizer.hasMoreTokens()){
 			tokenizer.nextToken();
 			count++;
