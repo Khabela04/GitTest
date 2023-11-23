@@ -10,7 +10,7 @@ public class Practice51 extends ConsoleProgram {
 			char charecter = text.charAt(i);
 				StringTokenizer tokenizer = new StringTokenizer(text, text);
 				while(tokenizer.hasMoreTokens()){
-					tokenizer.nextToken();
+					println(tokenizer.nextToken());
 				}
 		}
 	}
