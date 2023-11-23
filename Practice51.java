@@ -11,7 +11,6 @@ public class Practice51 extends ConsoleProgram {
 		println(charecter);
 		int n = (charecter - 'a');
 		String name = (String)("a" + n);
-		println(name);
 //;		while(tokenizer.hasMoreTokens()){
 //			print(tokenizer.nextToken());
 //		}
