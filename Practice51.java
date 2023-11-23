@@ -14,6 +14,6 @@ public class Practice51 extends ConsoleProgram {
 		}
 		}
 	}
-}
+	}}
 
 
