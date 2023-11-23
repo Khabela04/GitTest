@@ -10,7 +10,8 @@ public class Practice51 extends ConsoleProgram {
 		char charecter = text.charAt(1);
 		println(charecter);
 		int n = (charecter - 'a');
-		String name = (String)("a" + n);
+		String name = (String)("assa" + n);
+		print(name);
 //;		while(tokenizer.hasMoreTokens()){
 //			print(tokenizer.nextToken());
 //		}
