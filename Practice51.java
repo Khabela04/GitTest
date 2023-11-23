@@ -6,9 +6,12 @@ import acm.program.ConsoleProgram;
 public class Practice51 extends ConsoleProgram {
 	public void run(){
 		String text = readLine("Give me a text: ");
-		StringTokenizer tokenizer = new StringTokenizer(text, "" + text.charAt(1), true);
+		for(int i = 0; i < text.length(); i++){
+		StringTokenizer tokenizer = new StringTokenizer(text, "" + text.charAt(i));
 		while(tokenizer.hasMoreTokens()){
+			if(text.indexOf(text.charAt(i)) != i){
 			print(tokenizer.nextToken());
+		}
 		}
 	}
 }
