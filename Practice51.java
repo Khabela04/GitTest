@@ -8,6 +8,9 @@ public class Practice51 extends ConsoleProgram {
 		String text = readLine("Give me a text: ");
 		StringTokenizer tokenizer = new StringTokenizer(text, "a");
 		tokenizer = new StringTokenizer(tokenizer.nextToken(), "b");
+		while(tokenizer.hasMoreTokens()){
+			print(tokenizer.nextToken());
+		}
 	}
 }
 
