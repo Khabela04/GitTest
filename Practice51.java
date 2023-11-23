@@ -9,7 +9,7 @@ public class Practice51 extends ConsoleProgram {
 		String blank = "";
 		for(int i = 0; i < text.length(); i++){
 			if(text.indexOf(text.charAt(i)) == i){
-				println(text.charAt(i));
+				blank += text.charAt(i);
 			}
 		}
 		println(blank);
