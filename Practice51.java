@@ -9,7 +9,7 @@ public class Practice51 extends ConsoleProgram {
 		StringTokenizer tokenizer = new StringTokenizer(text, "a");
 		tokenizer.countTokens();
 		while(tokenizer.hasMoreTokens()){
-			print(tokenizer.nextToken());
+			print(tokenizer.countTokens());
 		}
 	}
 }
