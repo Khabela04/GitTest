@@ -30,6 +30,7 @@ public class StringsExtra2 extends ConsoleProgram {
 		}
 		else{
 		println(number);
+		number = 0;
 		};
 			
 //			I, V, X
