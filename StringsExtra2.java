@@ -25,7 +25,12 @@ public class StringsExtra2 extends ConsoleProgram {
 				number += 10;
 			}
 		}
+		if(romanNum.equals("quit")){
+			println("the end");
+		}
+		else{
 		println(number);
+		};
 			
 //			I, V, X
 		}
