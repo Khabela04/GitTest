@@ -12,7 +12,7 @@ public class PracticeProblem2 extends ConsoleProgram {
 				println(false);
 				break;
 			}
+			println(true);
 		}
-		println(true);
 	}
 }
