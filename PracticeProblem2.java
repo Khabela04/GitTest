@@ -13,7 +13,7 @@ public class PracticeProblem2 extends ConsoleProgram {
 				break;
 			}
 			if(i == text.length() - 1){
-			println(true);
+				println(true);
 			}
 		}
 	}
