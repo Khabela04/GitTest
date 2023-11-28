@@ -10,7 +10,7 @@ public class StringsExtra2 extends ConsoleProgram {
 		for(int i = 0; i < romanNum.length(); i++){
 			char charecter = romanNum.charAt(i);
 			if(charecter == 'I'){
-				if(i < romanNum.indexOf('V') && i < romanNum.indexOf('X')){
+				if(i < romanNum.indexOf('V') ||i < romanNum.indexOf('X')){
 					number -= 1;
 				}
 //				}else{
