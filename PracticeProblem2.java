@@ -5,10 +5,10 @@ import acm.program.ConsoleProgram;
 public class PracticeProblem2 extends ConsoleProgram {
 	public void run(){
 		String text = readLine("Give me a text");
-		for(int i = 0 ; i < text.length(); i++){
+		for(int i = 1 ; i < text.length(); i++){
 			char curChar =text.charAt(i);
-			char nextChar = text.charAt(i + 1);
-			if(curChar > nextChar ){
+			char prevChar = text.charAt(i -1);
+			if(curChar > prevChar ){
 				println(false);
 				break;
 			}
