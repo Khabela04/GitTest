@@ -5,9 +5,10 @@ import acm.program.ConsoleProgram;
 
 public class StringsExtra2 extends ConsoleProgram {
 	public void run(){
-		String romanNum = readLine("Give me a Roman Number: ");
+		String romanNum = "";
 		int number = 0;
 		while(!romanNum.equals("quit")){
+			romanNum = readLine("Give me a Roman Number: ");
 		for(int i = 0; i < romanNum.length(); i++){
 			char charecter = romanNum.charAt(i);
 			if(charecter == 'I'){
@@ -24,11 +25,10 @@ public class StringsExtra2 extends ConsoleProgram {
 				number += 10;
 			}
 		}
-			
+		println(number);
 			
 //			I, V, X
 		}
-		println(number);
 	}
 	}
 
