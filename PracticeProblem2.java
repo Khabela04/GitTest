@@ -8,7 +8,7 @@ public class PracticeProblem2 extends ConsoleProgram {
 		for(int i = 0 ; i < text.length(); i++){
 			char curChar =text.charAt(i);
 			char nextChar = text.charAt(i + 1);
-			if(curChar - 'a'> nextChar - 'a'){
+			if(curChar > nextChar ){
 				println(false);
 				break;
 			}
