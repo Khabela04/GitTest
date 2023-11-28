@@ -13,6 +13,5 @@ public class StringSample extends ConsoleProgram {
 		
 		char a = 'a';
 		Character.isDigit(a);
-		static boolean
 	}
 }
