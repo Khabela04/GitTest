@@ -24,11 +24,11 @@ public class StringsExtra2 extends ConsoleProgram {
 				number += 10;
 			}
 		}
-		println(number);
 			
 			
 //			I, V, X
 		}
+		println(number);
 	}
 	}
 
