@@ -7,9 +7,10 @@ public class PracticeProblem2 extends ConsoleProgram {
 		String text = readLine("Give me a text");
 		for(int i = 0 ; i < text.length(); i++){
 			char curChar =text.charAt(i);
-			char prevChar = text.charAt(i - 1);
-			if(curChar < prevChar){
+			char prevChar = text.charAt(i + 1);
+			if(curChar > prevChar){
 				println(false);
+				break;
 			}
 		}
 		println(true);
