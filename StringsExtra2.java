@@ -7,6 +7,7 @@ public class StringsExtra2 extends ConsoleProgram {
 	public void run(){
 		String romanNum = readLine("Give me a Roman Number: ");
 		int number = 0;
+		while(!romanNum.equals("quit")){
 		for(int i = 0; i < romanNum.length(); i++){
 			char charecter = romanNum.charAt(i);
 			if(charecter == 'I'){
@@ -28,5 +29,6 @@ public class StringsExtra2 extends ConsoleProgram {
 			
 //			I, V, X
 		}
+	}
 	}
 
