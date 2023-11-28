@@ -6,15 +6,16 @@ import acm.program.ConsoleProgram;
 public class StringsExtra2 extends ConsoleProgram {
 	public void run(){
 		String romanNum = readLine("Give me a Roman Number: ");
-		double number = 0;
+		int number = 0;
 		for(int i = 0; i < romanNum.length(); i++){
 			char charecter = romanNum.charAt(i);
 			if(charecter == 'I'){
 				if(i < romanNum.indexOf('V') && i < romanNum.indexOf('X')){
 					number -= 1;
-				}else{
-					number += 1;
 				}
+//				}else{
+//					number += 1;
+//				}
 			}
 			if(charecter == 'V'){
 				number += 5;
