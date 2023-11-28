@@ -10,7 +10,6 @@ public class PracticeProblem2 extends ConsoleProgram {
 			char prevChar = text.charAt(i - 1);
 			if(curChar < prevChar){
 				println(false);
-				break;
 			}
 		}
 		println(true);
