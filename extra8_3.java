@@ -4,7 +4,7 @@ import acm.program.GraphicsProgram;
 
 public class extra8_3 extends GraphicsProgram{
 	public void run(){
-		int n = 1;
+		int n = 2;
 		int x = 0;
 		for(int i = 0; i < 5; i++){
 			int y = 0;
