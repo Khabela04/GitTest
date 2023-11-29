@@ -6,7 +6,7 @@ import acm.program.GraphicsProgram;
 public class extra8_2 extends GraphicsProgram{
 	public void run(){
 		int length = 100;
-		Color col = Color.RED;
+		Color col = Color.BLUE;
 		boolean filled = true;
 		addSquare(length, col, filled);
 	}
