@@ -14,6 +14,6 @@ public class extra8_2 extends GraphicsProgram{
 		GRect square = new GRect(length, length);
 		square.setFilled(filled);
 		square.setColor(col);
-		add(square);
+		add(square, (getWidth() - length)/2, (getHeight()- length)/2);
 	}
 }
