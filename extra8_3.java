@@ -6,11 +6,11 @@ public class extra8_3 extends ConsoleProgram{
 		println(fib(n));
 	}
 	private int fib(int n){
-		int prevNum = 0;
+		int prevNum = 1;
 		int nextNum = 0;
 		int curNum = 0;
 		for(int i = 0; i < n; i ++){
-			curNum = i;
+			curNum = nextNum;
 			nextNum = curNum + prevNum;
 			prevNum = curNum;
 		}
