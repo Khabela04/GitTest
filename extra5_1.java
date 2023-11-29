@@ -8,7 +8,7 @@ public class extra5_1 extends GraphicsProgram{
 		double x = getWidth();
 		double y = getHeight();
 		GLabel text = new GLabel("width: " + x + "height: " + y);
-		text.setFont("London");
+		text.setFont("London - 42");
 		text.setColor(Color.RED);
 		add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
 	}
