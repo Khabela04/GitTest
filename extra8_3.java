@@ -8,12 +8,13 @@ public class extra8_3 extends ConsoleProgram{
 	private int fib(int n){
 		int prevNum = 1;
 		int nextNum = 0;
+		int curNum = 0;
 		for(int i = 0; i < n; i ++){
-			int curNum = i;
+			curNum = i;
 			nextNum = curNum + prevNum;
 			prevNum = curNum;
 		}
-		return nextNum;
+		return curNum;
 // 	0, 1, 1, 2, 3, 5 ......
 	}
 }
