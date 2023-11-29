@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class extra8_3 extends ConsoleProgram{
 	public void run(){
 		int n = readInt("Which number of fibonacci do you want: ");
-		println(fib(n));
+		println(n+"th number in fibonacci is " +fib(n));
 	}
 	private int fib(int n){
 		int prevNum = 1;
