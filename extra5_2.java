@@ -27,7 +27,7 @@ public class extra5_2 extends GraphicsProgram{
 		GRect window2 = new GRect (WINDOWS_WIDTH, WINDOWS_HEIGHT);
 		add(house, (getWidth() - HOUSE_WIDTH)/2, (getHeight() - HOUSE_HEIGHT)/2);
 		add(door, (getWidth() - HOUSE_WIDTH)/2 + (HOUSE_WIDTH - DOOR_WIDTH)/2, (getHeight() - HOUSE_HEIGHT)/2 + HOUSE_HEIGHT - DOOR_HEIGHT);
-		add(window1,  (getWidth() - HOUSE_WIDTH)/2 + (HOUSE_WIDTH - 2 * WINDOWS_WIDTH - DIFF_WINDOWS)/2, (getHeight() - HOUSE_HEIGHT)/2 + DIFF_WINDOWS); 
+		add(window1,  (getWidth() - HOUSE_WIDTH)/2 + (HOUSE_WIDTH - 2 * WINDOWS_WIDTH - DIFF_WINDOWS)/2, (getHeight() - HOUSE_HEIGHT)/2 + 5); 
 		add(window2,  (getWidth() - HOUSE_WIDTH)/2 + (HOUSE_WIDTH - 2 * WINDOWS_WIDTH - DIFF_WINDOWS)/2 + DIFF_WINDOWS, (getHeight() - HOUSE_HEIGHT)/2 + DIFF_WINDOWS);
 		add(new GLine(xStart, yStart, xEnd, yEnd));
 		add(new GLine(x1Start, y1Start,x1End, y1End));
