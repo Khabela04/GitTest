@@ -6,7 +6,7 @@ public class extra8_3 extends GraphicsProgram{
 	public void run(){
 		int n = 3;
 		addSquares(10*fib(n), 0, 10 );
-		int x = 1;
+		int x = 10;
 		for(int i = 0; i < 5; i++){
 			int y = 0;
 			addSquares(10*fib(n), x, y);
