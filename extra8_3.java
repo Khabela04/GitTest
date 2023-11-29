@@ -8,7 +8,7 @@ public class extra8_3 extends GraphicsProgram{
 		addSquares(10*fib(n), 0, 10 );
 		for(int i = 0; i < 5; i++){
 			int x = 0;
-			int y = 0;
+			int y = 20;
 			addSquares(10*fib(n), x, y);
 			x += 10;
 		}
