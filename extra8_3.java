@@ -14,7 +14,7 @@ public class extra8_3 extends ConsoleProgram{
 			nextNum = curNum + prevNum;
 			prevNum = curNum;
 		}
-		return nextNum;
+		return curNum;
 // 	0, 1, 1, 2, 3, 5 ......
 	}
 }
