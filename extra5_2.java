@@ -3,13 +3,13 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class extra5_2 extends GraphicsProgram{
-	private static final int HOUSE_WIDTH = 40;
-	private static final int HOUSE_HEIGHT = 40;
-	private static final int DOOR_WIDTH = 8;
-	private static final int DOOR_HEIGHT = 13;
-	private static final int WINDOWS_HEIGHT = 6;
-	private static final int WINDOWS_WIDTH = 6;
-	private static final int DIFF_WINDOWS = 20;
+	private static final int HOUSE_WIDTH = 100;
+	private static final int HOUSE_HEIGHT = 100;
+	private static final int DOOR_WIDTH = 40;
+	private static final int DOOR_HEIGHT = 60;
+	private static final int WINDOWS_HEIGHT = 20;
+	private static final int WINDOWS_WIDTH = 20;
+	private static final int DIFF_WINDOWS = 45;
 	GLine line;
 	public void run(){
 		double xStart = (getWidth() - HOUSE_WIDTH)/2;
