@@ -4,7 +4,7 @@ import acm.program.GraphicsProgram;
 
 public class extra8_3 extends GraphicsProgram{
 	public void run(){
-		int n = 5;
+		int n = 10;
 		addSquares(10*fib(n), 0, 10 );
 		int x = 0;
 		for(int i = 0; i < 5; i++){
