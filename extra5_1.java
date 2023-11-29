@@ -11,6 +11,8 @@ public class extra5_1 extends GraphicsProgram{
 		text.setFont("London-42");
 		text.setColor(Color.RED);
 		add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
+		GLabel coordinates = new GLabel("width: " + text.getWidth() + " height: " + text.getHeight() + " x: " + text.getX() + " y: " + text.getY());
+		add(coordinates, 0, getHeight() - coordinates.getHeight());
 	}
 }
 
