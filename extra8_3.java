@@ -6,15 +6,16 @@ public class extra8_3 extends GraphicsProgram{
 	public void run(){
 		int n = 5;
 		addSquares(10*fib(n), 0, 10 );
-	}
-	private void addSquares(int length, int y, int border) {
 		for(int i = 0; i < 5; i++){
-			GRect square = new GRect(length, length);
 			int x = 0;
-			add(square, x, y);
-			x += border;
+			int y = 0;
+			addSquares(10*fib(n), x, y);
+			x += 10;
 		}
-		
+	}
+	private void addSquares(int length, int x, int y) {
+			GRect name = new GRect(length, length);
+			add(name, x, y);
 	}
 	private int fib(int n){
 		int prevNum = 1;
