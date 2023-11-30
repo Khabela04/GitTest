@@ -10,9 +10,15 @@ import acm.program.ConsoleProgram;
 
 public class midterm_pr4 extends ConsoleProgram{
 	public void run(){
-		String text = readLine("Give me a text");
-		StringTokenizer tokens = new StringTokenizer(text);
 		String blank = "";
+		String text = readLine("Give me a text");
+		String text1 = readLine("Give me your guess which word me be anagram of this");
+		if(text1.equals(blank)){
+			println("This words are anagrams");
+		}else{
+			println("This words aren't anagrams");
+		}
+		StringTokenizer tokens = new StringTokenizer(text);
 		char n = 0;
 		while(tokens.hasMoreTokens()){
 			String word = tokens.nextToken();
