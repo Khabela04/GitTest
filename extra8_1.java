@@ -19,13 +19,29 @@ import acm.program.ConsoleProgram;
 
 public class extra8_1 extends ConsoleProgram{
 	public void run(){
-		double a = readInt("Give me a number: ");
-		double b = readInt("Give me a number: ");
-		while(b != 0){
-			double r = a % b;
-			a = b;
-			b = r;
+		String text = "Init";
+		println(oftenUsed(text));
+	}
+	private char oftenUsed(String text){
+		int maximum = 0;
+		char maxChar = 'a';
+		for(int i = 0; i < text.length(); i++){
+			char charecter = text.charAt(i);
+			if(counter(text, charecter) > maximum){
+				maxChar = charecter;
+				maximum = counter(text, charecter);
+			}
 		}
-		println(a);
+		return maxChar;
+	}
+	private int counter(String text, char Charecter){
+		int counter1 = 0;
+		for(int i = 0; i < text.length(); i++){
+			if(Charecter  == text.charAt(i) || Charecter == text.charAt(i) - 'A' + 'a'|| Charecter == text.charAt(i) - 'a' + 'A'){
+				counter1++;
+			}
+		}
+		return counter1;
 	}
 }
+
