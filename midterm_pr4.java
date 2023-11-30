@@ -12,7 +12,7 @@ public class midterm_pr4 extends ConsoleProgram{
 	public void run(){
 		String blank = "";
 		String text = readLine("Give me a text");
-		String text1 = readLine("Give me your guess which word me be anagram of this");
+		String text1 = "" +readLine("Give me your guess which word me be anagram of this");
 		if(text1.equals("" +blank)){
 			println("This words are anagrams");
 		}else{
