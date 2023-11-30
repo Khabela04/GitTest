@@ -23,6 +23,9 @@ public class midterm_pr3 extends ConsoleProgram{
 					blank += (""+txt.charAt(i)).toLowerCase();
 				}
 			}
+			if(tokens.hasMoreTokens()){
+				blank += " ";
+			}
 		}
 		println(blank);
 	}
