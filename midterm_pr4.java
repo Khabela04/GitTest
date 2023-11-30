@@ -13,12 +13,18 @@ public class midterm_pr4 extends ConsoleProgram{
 		String text = readLine("Give me a text");
 		StringTokenizer tokens = new StringTokenizer(text);
 		String blank = "";
+		char n = 0;
 		while(tokens.hasMoreTokens()){
 			String word = tokens.nextToken();
 			for(int i = 0; i < word.length(); i++){
 				char charecter = word.charAt(word.length() - i - 1);
+				if(charecter == ',' || charecter == '.'){
+					n = charecter;
+				}
 				blank += charecter;
-			}
+			}	
+			blank += (""+ n);
+			n = 0;
 			if(tokens.hasMoreTokens()){
 				blank += " ";
 			}
