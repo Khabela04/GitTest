@@ -11,16 +11,12 @@ public class midterm_pr2 extends ConsoleProgram{
 		for(int i = 1; i < text.length(); i++){
 			char curChar = text.charAt(i);
 			char prevChar = text.charAt(i-1);
-			if(curChar - 'a' > 32 || curChar - 'a' < 0){
-				curChar = text.charAt(i+1);
-			}
-			if(prevChar - 'a' > 32 || prevChar - 'a' < 0){
-				prevChar = text.charAt(i);
-			}
-			if(curChar < prevChar){
+			if((curChar - 'a' < 32 && curChar - 'a' > 0) && (prevChar - 'a' < 32 && prevChar - 'a' > 0)){
+				if(curChar < prevChar){
 				return false;
 			}
 		}
-		return true;
+			return true;
+		}
 	}
 }
