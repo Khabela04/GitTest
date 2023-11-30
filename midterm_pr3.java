@@ -17,7 +17,6 @@ public class midterm_pr3 extends ConsoleProgram{
 		while(tokens.hasMoreTokens()){
 			for(int i = 0; i < tokens.nextToken().length(); i++){
 				if(i == 0){
-					String n = ""+tokens.nextToken().charAt(0);
 					blank += (""+tokens.nextToken().charAt(0)).toUpperCase();
 				}else{
 					blank += (""+tokens.nextToken().charAt(i)).toLowerCase();
