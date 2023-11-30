@@ -28,12 +28,13 @@ public class midterm_pr4 extends ConsoleProgram{
 			}	
 			blank += (""+ n);
 			n = 0;
-//			if(tokens.hasMoreTokens()){
-//				blank += " ";
-//			}
+			if(tokens.hasMoreTokens()){
+				blank += " ";
+			}
 		}
+		String name  =blank;
 		
-		if(text1.equals(blank)){
+		if(text1.equals(name)){
 			println("This words are anagrams");
 		}else{
 			println("This words aren't anagrams");
