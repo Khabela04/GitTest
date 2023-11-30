@@ -11,7 +11,7 @@ import acm.program.ConsoleProgram;
 public class midterm_pr4 extends ConsoleProgram{
 	public void run(){
 		String text = readLine("Give me a text");
-		StringTokenizer tokens = new StringTokenizer(text, " ,.");
+		StringTokenizer tokens = new StringTokenizer(text);
 		String blank = "";
 		while(tokens.hasMoreTokens()){
 			String word = tokens.nextToken();
