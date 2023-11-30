@@ -13,7 +13,7 @@ public class midterm_pr4 extends ConsoleProgram{
 		String blank = "";
 		String text = readLine("Give me a text");
 		String text1 = readLine("Give me your guess which word me be anagram of this ");
-		boolean indicator;
+		boolean indicator = false;
 		StringTokenizer tokens = new StringTokenizer(text);
 		char n = 0;
 		while(tokens.hasMoreTokens()){
