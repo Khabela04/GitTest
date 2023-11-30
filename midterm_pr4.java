@@ -33,7 +33,7 @@ public class midterm_pr4 extends ConsoleProgram{
 			}
 		}
 		String name = "saba";
-		if(text1==name){
+		if(text1.equals(name)){
 			println("This words are anagrams");
 		}else{
 			println("This words aren't anagrams");
