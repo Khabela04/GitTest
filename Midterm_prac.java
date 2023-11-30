@@ -16,7 +16,7 @@ public class Midterm_prac extends GraphicsProgram {
 		addRandomCircle();
 	}
 	private void addRandomCircle(){
-		double radius = rgen.nextDouble(V_MIN, V_MAX);
+		double radius = rgen.nextDouble(RADIUS_MIN, RADIUS_MAX);
 		GOval circle = new GOval(2 * radius,2 * radius);
 		circle.setFilled(true);
 		circle.setColor(rgen.nextColor());
