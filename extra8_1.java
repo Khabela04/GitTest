@@ -19,7 +19,7 @@ import acm.program.ConsoleProgram;
 
 public class extra8_1 extends ConsoleProgram{
 	public void run(){
-		String text = "Init";
+		String text = "Initnn";
 		println(oftenUsed(text));
 	}
 	private char oftenUsed(String text){
