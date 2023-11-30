@@ -16,7 +16,7 @@ public class midterm_pr2 extends ConsoleProgram{
 				return false;
 			}
 		}
-			return true;
 		}
+		return true;
 	}
 }
