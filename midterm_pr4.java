@@ -23,8 +23,8 @@ public class midterm_pr4 extends ConsoleProgram{
 			String word = tokens.nextToken();
 			for(int i = 0; i < word.length(); i++){
 				char charecter = word.charAt(word.length() - i - 1);
-				char charecter1 = word.charAt(word.length() - i - 1);
-				char charecter2 = word1.charAt(word1.length() - i - 1);
+				char charecter1 = word.charAt(i);
+				char charecter2 = word1.charAt(i);
 				if(charecter1 != charecter2){
 					counter++;
 				}
