@@ -32,7 +32,7 @@ public class midterm_pr4 extends ConsoleProgram{
 				blank += " ";
 			}
 		}
-		if(text1.equals(blank)){
+		if(text1==blank){
 			println("This words are anagrams");
 		}else{
 			println("This words aren't anagrams");
