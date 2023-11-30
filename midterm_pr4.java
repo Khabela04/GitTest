@@ -44,7 +44,7 @@ public class midterm_pr4 extends ConsoleProgram{
 		}else{
 			println("This words aren't anagrams");
 		}
-//		println(blank);
+		println(blank);
 	}
 }
 
