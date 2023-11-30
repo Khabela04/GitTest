@@ -14,7 +14,7 @@ public class midterm_pr4 extends ConsoleProgram{
 		String text = readLine("Give me a text");
 		String text1 = readLine("Give me your guess which word me be anagram of this ");
 		StringTokenizer tokens = new StringTokenizer(text);
-		char n = 0;
+		char n = ' ';
 		while(tokens.hasMoreTokens()){
 			String word = tokens.nextToken();
 			for(int i = 0; i < word.length(); i++){
@@ -26,8 +26,8 @@ public class midterm_pr4 extends ConsoleProgram{
 				blank += charecter;
 				}
 			}	
-//			blank += (""+ n);
-//			n = 0;
+			blank += (""+ n);
+			n = 0;
 			if(tokens.hasMoreTokens()){
 				blank += " ";
 			}
