@@ -32,8 +32,8 @@ public class midterm_pr4 extends ConsoleProgram{
 				blank += " ";
 			}
 		}
-		String name = "" + "saba";
-		if(text1.equals(name)){
+		
+		if(text1.equals(blank)){
 			println("This words are anagrams");
 		}else{
 			println("This words aren't anagrams");
