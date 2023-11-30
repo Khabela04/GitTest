@@ -32,7 +32,8 @@ public class midterm_pr4 extends ConsoleProgram{
 				blank += " ";
 			}
 		}
-		if(text1=="saba"){
+		String name = "saba";
+		if(text1==name){
 			println("This words are anagrams");
 		}else{
 			println("This words aren't anagrams");
