@@ -28,9 +28,9 @@ public class midterm_pr4 extends ConsoleProgram{
 			}	
 			blank += (""+ n);
 			n = 0;
-			if(tokens.hasMoreTokens()){
-				blank += " ";
-			}
+//			if(tokens.hasMoreTokens()){
+//				blank += " ";
+//			}
 		}
 		
 		if(text1.equals(blank)){
