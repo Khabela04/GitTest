@@ -20,9 +20,10 @@ public class midterm_pr4 extends ConsoleProgram{
 				char charecter = word.charAt(word.length() - i - 1);
 				if(charecter == ',' || charecter == '.'){
 					n = charecter;
-					break;
 				}
+				else{
 				blank += charecter;
+				}
 			}	
 			blank += (""+ n);
 			n = 0;
