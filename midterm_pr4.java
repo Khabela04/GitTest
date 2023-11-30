@@ -13,21 +13,26 @@ public class midterm_pr4 extends ConsoleProgram{
 		String blank = "";
 		String text = readLine("Give me a text");
 		String text1 = readLine("Give me your guess which word me be anagram of this ");
+		boolean indicator;
 		StringTokenizer tokens = new StringTokenizer(text);
-		char n = ' ';
+		char n = 0;
 		while(tokens.hasMoreTokens()){
 			String word = tokens.nextToken();
 			for(int i = 0; i < word.length(); i++){
 				char charecter = word.charAt(word.length() - i - 1);
 				if(charecter == ',' || charecter == '.'){
 					n = charecter;
+					indicator = true;
 				}
 				else{
 				blank += charecter;
 				}
 			}	
-			blank += (""+ n);
-			n = 0;
+			if(indicator){
+				blank += (""+ n);
+				n = 0;
+			}
+			indicator = false;
 			if(tokens.hasMoreTokens()){
 				blank += " ";
 			}
