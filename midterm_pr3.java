@@ -15,11 +15,12 @@ public class midterm_pr3 extends ConsoleProgram{
 		String blank = "";
 		StringTokenizer tokens = new StringTokenizer(text);
 		while(tokens.hasMoreTokens()){
-			for(int i = 0; i < tokens.nextToken().length(); i++){
+			 String txt = tokens.nextToken();
+			for(int i = 0; i < txt.length(); i++){
 				if(i == 0){
-					blank += (""+tokens.nextToken().charAt(0)).toUpperCase();
+					blank += (""+txt.charAt(0)).toUpperCase();
 				}else{
-					blank += (""+tokens.nextToken().charAt(i)).toLowerCase();
+					blank += (""+txt.charAt(i)).toLowerCase();
 				}
 			}
 		}
