@@ -21,10 +21,11 @@ public class midterm_pr4 extends ConsoleProgram{
 		while(tokens.hasMoreTokens()){
 			String word1 = tokenson.nextToken();
 			String word = tokens.nextToken();
+			String word2 = blank;
 			for(int i = 0; i < word.length(); i++){
 				char charecter = word.charAt(word.length() - i - 1);
-				char charecter1 = word.charAt(i);
-				char charecter2 = word1.charAt(i);
+				char charecter1 = blank.charAt(i+1);
+				char charecter2 = word2.charAt(i+1);
 				if(charecter1 != charecter2){
 					counter++;
 				}
