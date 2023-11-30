@@ -31,7 +31,6 @@ public class Midterm_prac extends GraphicsProgram {
 		double radius = rgen.nextDouble(RADIUS_MIN, RADIUS_MAX);
 		circle = new GOval(2 * radius,2 * radius);
 		circle.setFilled(true);
-		circle.setColor(rgen.nextColor());
 		double x = rgen.nextDouble(0, getWidth() - 2 * radius);
 		double y = rgen.nextDouble(0, getHeight() - 2 * radius);
 		add(circle, x, y);
@@ -42,6 +41,7 @@ public class Midterm_prac extends GraphicsProgram {
 		if(obj != null){
 			v_x = getRandomSpeed();
 			v_y = getRandomSpeed();
+			circle.setColor(rgen.nextColor());
 		}
 		
 	}
