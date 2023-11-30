@@ -22,6 +22,12 @@ public class Midterm_prac extends GraphicsProgram {
 		addMouseListeners();
 		addRandomCircle();
 		while(true){
+			if(circle.getX() < 0 || circle.getX() > getWidth() - circle.getWidth()){
+				v_x = -v_x;
+			}
+			if(circle.getY() < 0 || circle.getY() > getWidth() - circle.getWidth()){
+				v_y = -v_y;
+			}
 			circle.move(v_x, v_y);
 			pause(DELAY);
 		}
