@@ -22,8 +22,8 @@ import acm.program.GraphicsProgram;
 public class midterm2022_2 extends GraphicsProgram{
 	int rows = 8;
 	int columns = 8;
-	GObject prevBlack;
-	GObject curBlack;
+	GObject prevBlack = null;
+	GObject curBlack = null;
 	double length = Math.min(getWidth(), getHeight())/columns;
 	public void run(){
 		addGrids();
