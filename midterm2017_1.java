@@ -1,6 +1,7 @@
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLabel;
+import acm.graphics.GPoint;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -24,6 +25,7 @@ public class midterm2017_1 extends GraphicsProgram{
 	double y1 = 0;
 	int n = 0;
 	GLabel text;
+	GPoint point;
 	public void run(){
 		addMouseListeners();
 		GRect square = new GRect(BOX_SIZE, BOX_SIZE);
@@ -34,17 +36,16 @@ public class midterm2017_1 extends GraphicsProgram{
 	public void mouseClicked(MouseEvent e){
 		x1 = e.getX();
 		y1 = e.getY();
+		point = new GPoint(x1, y1);
 	}
-	public void mouseReleased(MouseEvent e){
+	public void mouseDragged(MouseEvent e){
 		if(getElementAt(getX(), getY()) != null){
 			if(getElementAt(x1, y1) != null){
-				if(x1 > e.getX()){
-					remove(text);
+				if(point.getX() > e.getX()){
 					n--;
 					text = new GLabel(""+n);
 				}
-				if(x1 < e.getX() ){
-					remove(text);
+				if(point.getX() < e.getX() ){
 					n++;
 					text = new GLabel(""+n);
 				}
