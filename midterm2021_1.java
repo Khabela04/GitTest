@@ -30,7 +30,7 @@ public class midterm2021_1 extends ConsoleProgram{
 	}
 	private int log(int n, int m){
 		int counter = 0;
-		while(n < m){
+		while(n <= m){
 			n = n * n;
 			counter++;
 		}
