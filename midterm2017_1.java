@@ -22,6 +22,7 @@ import acm.program.GraphicsProgram;
 public class midterm2017_1 extends GraphicsProgram{
 	private static final int BOX_SIZE = 100;
 	double x1 = 0;
+	double x2 = 0;
 	double y1 = 0;
 	int n = 0;
 	GLabel text;
@@ -35,28 +36,13 @@ public class midterm2017_1 extends GraphicsProgram{
 	}
 	public void mouseClicked(MouseEvent e){
 		x1 = e.getX();
-		y1 = e.getY();
-		point = new GPoint(x1, y1);
 	}
 
 	public void mouseReleased(MouseEvent e){
-		int counter = 0;
-		if(counter <1){
-		point = new GPoint(e.getX(), e.getY());
-		}
-		
-		counter++;
-		x1 = e.getX();
-		double x2 = point.getX();
+		x2 = e.getX();
 //		if(getElementAt(getX(), getY()) != null){
 //			if(getElementAt(x1, y1) != null){
 //				if(point.getX() > e.getX()){
-				if(x1 ==x2){
-					remove(text);
-					n --;
-					text = new GLabel(""+n);
-					add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
-				}
 //				if(x1 > x2){
 //					remove(text);
 //					n ++;
@@ -70,6 +56,20 @@ public class midterm2017_1 extends GraphicsProgram{
 //				}
 //			}
 //		}
+	}
+	public void mouseDragged(MouseEvent e){
+		if(x1>x2){
+			remove(text);
+			n--;
+			text = new GLabel(""+n);
+			add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
+		}
+		if(x1<x2){
+			remove(text);
+			n++;
+			text = new GLabel(""+n);
+			add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
+		}
 	}
 
 }
