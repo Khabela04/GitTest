@@ -39,17 +39,18 @@ public class midterm2017_1 extends GraphicsProgram{
 		point = new GPoint(x1, y1);
 	}
 	public void mouseDragged(MouseEvent e){
-		if(getElementAt(getX(), getY()) != null){
-			if(getElementAt(x1, y1) != null){
-				if(point.getX() > e.getX()){
-					n--;
-					text = new GLabel(""+n);
-				}
-				if(point.getX() < e.getX() ){
-					n++;
-					text = new GLabel(""+n);
-				}
-			}
-		}
+		n++;
+//		if(getElementAt(getX(), getY()) != null){
+//			if(getElementAt(x1, y1) != null){
+//				if(point.getX() > e.getX()){
+//					n--;
+//					text = new GLabel(""+n);
+//				}
+//				if(point.getX() < e.getX() ){
+//					n++;
+//					text = new GLabel(""+n);
+//				}
+//			}
+//		}
 	}
 }
