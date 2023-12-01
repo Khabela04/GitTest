@@ -13,6 +13,7 @@ public class midterm2017_2 extends ConsoleProgram{
 				}
 			}
 		}
+		println(maximum);
 	}
 	private boolean isPrime(int i){
 		for(int j = 2; j < i; j++){
