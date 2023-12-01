@@ -13,7 +13,7 @@ public class midterm2022_1 extends ConsoleProgram{
 			for(int j = 0; j < part1.length(); j++){
 				String subPart1 = subber(part1, part1.charAt(j));
 				for(int n = 0; n < part2.length(); n++){
-					String subPart2 = subber(part2, part2.charAt(i));
+					String subPart2 = subber(part2, part2.charAt(n));
 					String modText1 = subPart1 + subPart2;
 					if(modText1.equals(text2)){
 						return true;
