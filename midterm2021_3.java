@@ -1,8 +1,10 @@
 
 
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GLine;
 import acm.program.GraphicsProgram;
-import javafx.scene.input.MouseEvent;
+
 
 public class midterm2021_3 extends GraphicsProgram{
 	private GLine point;
