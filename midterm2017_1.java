@@ -44,7 +44,7 @@ public class midterm2017_1 extends GraphicsProgram{
 		x2 = e.getX();
 		if(getElementAt(e.getX(), e.getY()) == square){
 			if(getElementAt(x1, y1) == square){
-				if(point.getX() > e.getX()){
+				
 				if(x1 > x2){
 					n--;
 					remove(text);
@@ -64,7 +64,7 @@ public class midterm2017_1 extends GraphicsProgram{
 //				}
 //			}
 				}}
-		}}}
+		}
 	
 //	public void mouseDragged(MouseEvent e){
 //		if(x1>x2){
@@ -81,3 +81,4 @@ public class midterm2017_1 extends GraphicsProgram{
 //		}
 //	}
 
+}
