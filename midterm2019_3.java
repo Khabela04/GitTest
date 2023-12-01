@@ -14,6 +14,16 @@ public class midterm2019_3 extends GraphicsProgram{
 	GOval circle;
 	public void run(){
 		addMouseListeners();
+		while(true){
+			if(selectedObject != null){
+				while(selectedObject.getColor()!= Color.GREEN){
+					Color color = colorChooser();
+					selectedObject.setColor(color);
+					println(selectedObject);
+					pause(DELAY);
+				}
+			}
+		}
 	}
 	public void mouseClicked(MouseEvent e){
 		GObject obj = getElementAt(getX(), getY());
@@ -24,30 +34,27 @@ public class midterm2019_3 extends GraphicsProgram{
 			circle.setColor(rgen.nextColor());
 		}
 		if(obj == circle){
-			while(true){
-				pause(DELAY);
-				int number = rgen.nextInt(1,5);
-				if(number == 1){
-					obj.setColor(Color.GREEN);
-				}
-				if(number == 2){
-					obj.setColor(Color.RED);
-				}
-				if(number == 3){
-					obj.setColor(Color.BLUE);
-				}
-				if(number == 4){
-					obj.setColor(Color.BLACK);
-				}
-				if(number == 5){
-					obj.setColor(Color.YELLOW);
-				}
-				if(obj.getColor() == Color.GREEN){
-					break;
-				}
-			}
+			selectedObject = obj;
+		
 		
 		}
 	}
-}
+	private Color colorChooser(){
+			int number = rgen.nextInt(1,5);
+			if(number == 1){
+				return Color.GREEN;
+			}
+			if(number == 2){
+				return Color.RED;
+			}
+			if(number == 3){
+				return Color.BLUE;
+			}
+			if(number == 4){
+				return Color.BLACK;
+			}
+				return Color.YELLOW;
+	}
+	}
+
 
