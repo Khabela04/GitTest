@@ -40,11 +40,12 @@ public class midterm2017_1 extends GraphicsProgram{
 	}
 
 	public void mouseDragged(MouseEvent e){
+		int x2 = e.getX();
 //		if(getElementAt(getX(), getY()) != null){
 //			if(getElementAt(x1, y1) != null){
 //				if(point.getX() > e.getX()){
 					remove(text);
-					n = e.getX();
+					n = x2;
 					text = new GLabel(""+n);
 					add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
 //				}
