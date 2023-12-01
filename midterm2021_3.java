@@ -9,19 +9,20 @@ import acm.program.GraphicsProgram;
 
 
 public class midterm2021_3 extends GraphicsProgram{
-	GPoint prevPoint;
+	GPoint point;
 	GLine line;
-	double startX = 0;
-	double startY = 0;
-	boolean indicator = false;
 	public void run(){
 		addMouseListeners();
-		prevPoint = new GPoint(0, 0);
+		point = new GPoint(0,0);
 	}
 	public void mouseClicked(MouseEvent e){
-		line = new GLine(prevPoint.getX(),prevPoint.getY() , e.getX(), e.getY());
+		line = new GLine(point.getX(), point.getY(), e.getX(), e.getY());
 		add(line);
-		prevPoint = new GPoint(e.getX(), e.getY());
+		point = new GPoint(e.getX(), e.getY());
+	}
+	public void mouseDragged(MouseEvent e){
+		line.setEndPoint(e.getX(), e.getY());
 	}
 }
+
 	
