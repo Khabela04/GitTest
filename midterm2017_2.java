@@ -4,7 +4,7 @@ public class midterm2017_2 extends ConsoleProgram{
 	public void run(){
 		int number = readInt("Give me a number");
 		int maximum = 0;
-		for(int i = 0; i < number; i++){
+		for(int i = 2; i < number; i++){
 			if(isPrime(i)){
 				if(number % i == 0){
 					if(i > maximum){
