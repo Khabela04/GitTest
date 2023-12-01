@@ -14,9 +14,9 @@ import acm.util.RandomGenerator;
 public class midterm_pr8 extends ConsoleProgram{
 	RandomGenerator rgen = RandomGenerator.getInstance();
 	public void run(){
-		int counterTwo = 0;
-		int counter = 0;
-		int averageTwo = 0;
+		double counterTwo = 0;
+		double counter = 0;
+		double averageTwo = 0;
 		for(int j = 0; j < 10000; j++){
 			counterTwo = 0;
 			for(int i = 0; i < 4; i++){
