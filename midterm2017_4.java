@@ -13,13 +13,13 @@ import acm.util.RandomGenerator;
 
 public class midterm2017_4 extends ConsoleProgram {
 	RandomGenerator rgen = RandomGenerator.getInstance();
-	int n1 = 0;
+	int n1 = 100;
 	int counter = 0;
 	int n2 = 1;
 	public void run(){
 		for(int i = 0; i < 1000; i++){
 			countSequence(n1);
-			n1 =0;
+			n1 =100;
 			n2 = 1;
 		}
 		double average = counter/1000.0;
