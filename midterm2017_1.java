@@ -38,6 +38,7 @@ public class midterm2017_1 extends GraphicsProgram{
 		y1 = e.getY();
 		point = new GPoint(x1, y1);
 	}
+
 	public void mouseDragged(MouseEvent e){
 		if(getElementAt(getX(), getY()) != null){
 			if(getElementAt(x1, y1) != null){
@@ -55,3 +56,4 @@ public class midterm2017_1 extends GraphicsProgram{
 //		}
 	}
 }
+}}
