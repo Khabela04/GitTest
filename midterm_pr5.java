@@ -14,12 +14,15 @@ import acm.program.ConsoleProgram;
 
 public class midterm_pr5 extends ConsoleProgram{
 	public void run(){
+		boolean indicator = false;
 		int num = readInt("Give me a number: ");
 		for(int i =1; i < num; i++){
 			if(isSquare(i)){
-				println(isSquare(num-1));
+				indicator = true;
+				break;
 			}
 		}
+		println(indicator);
 	}
 	private boolean isSquare(double i){
 		for(double j = 1; j <= i; j++){
