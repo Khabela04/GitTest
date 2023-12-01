@@ -12,6 +12,10 @@ public class midterm2017_3 extends ConsoleProgram{
 					indicator = false;
 					break;
 				}
+				if(isUsedMultiple(text1,letter2)){
+					indicator = false;
+					break;
+				}
 		}
 		if(indicator){
 			println("You can do it");
@@ -19,5 +23,18 @@ public class midterm2017_3 extends ConsoleProgram{
 			println("You can't do it");
 		}
 	}
+	}
+
+	private boolean isUsedMultiple(String text1, char letter2) {
+		int counter = 0;
+		for(int i = 0; i < text1.length(); i++){
+			if(text1.charAt(i) == letter2){
+				counter++;
+			}
+		}
+		if(counter > 1){
+			return true;
+		}
+		return false;
 	}
 }
