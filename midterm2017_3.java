@@ -12,10 +12,10 @@ public class midterm2017_3 extends ConsoleProgram{
 					indicator = false;
 					break;
 				}
-				if(isUsedMultiple(text1,letter2)){
-					indicator = false;
-					break;
-				}
+//				if(isUsedMultiple(text1,letter2)){
+//					indicator = false;
+//					break;
+//				}
 		}
 		if(indicator){
 			println("You can do it");
