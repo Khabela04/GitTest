@@ -32,7 +32,7 @@ public class midterm2017_1 extends GraphicsProgram{
 		addMouseListeners();
 		square = new GRect(BOX_SIZE, BOX_SIZE);
 		add(square, (getWidth() - BOX_SIZE)/2, (getHeight() - BOX_SIZE)/2);
-		square.setFilled(true);
+//		square.setFilled(true);
 		text = new GLabel(""+n);
 		add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
 	}
