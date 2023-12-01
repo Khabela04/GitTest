@@ -6,6 +6,7 @@ public class midterm2021_2 extends ConsoleProgram{
 		println(amIYourFatherLuke("GATTA", "TTGATTT")); // უნდა დაბეჭდოს true		
 		println(amIYourFatherLuke("GAT", "TTGAT")); // უნდა დაბეჭდოს true
 		println(amIYourFatherLuke("GAT", "TTTGAT")); // უნდა დაბეჭდოს false
+		println("CGAT".substring(1, 4));
 	}
 
 	private boolean amIYourFatherLuke(String lukeDNA, String anakinDNA){
