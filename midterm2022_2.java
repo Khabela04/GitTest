@@ -26,6 +26,7 @@ public class midterm2022_2 extends GraphicsProgram{
 	GObject curBlack = null;
 	double length = Math.min(getWidth(), getHeight())/columns;
 	public void run(){
+		addMouseListeners();
 		addGrids();
 	}
 	private void addGrids(){
