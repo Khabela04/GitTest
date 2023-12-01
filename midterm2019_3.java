@@ -22,6 +22,7 @@ public class midterm2019_3 extends GraphicsProgram{
 					println(selectedObject);
 					pause(DELAY);
 				}
+				selectedObject = null;
 			}
 		}
 	}
