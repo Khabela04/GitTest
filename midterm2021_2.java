@@ -9,19 +9,19 @@ public class midterm2021_2 extends ConsoleProgram{
 		println(maxString);
 	}
 	private boolean amIYourFatherLuke(String Luka, String Anakin){
-		for(int i = 0; i < Luka.length; i++){
+		for(int i = 0; i < Luka.length(); i++){
 			String LukaPart = Luka.substring(0, i);	//LU
-			for(int j = 0; j < Anakin.length; j++){
+			for(int j = 0; j < Anakin.length(); j++){
 			String AnakinPart = Anakin.substring(0,j);
-			if(LukaPart.equals(AnakinPart){
+			if(LukaPart.equals(AnakinPart)){
 				checkMaximum(LukaPart);
 			}
 		}
 		if(!maxString.equals("")){
 			return true;
 		}
+		}
 		return false;
-		
 	}
 	private void checkMaximum(String LukaPart){
 		int maximumLength = 0;
