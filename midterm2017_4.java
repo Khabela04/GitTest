@@ -13,7 +13,7 @@ import acm.util.RandomGenerator;
 
 public class midterm2017_4 extends ConsoleProgram {
 	RandomGenerator rgen = RandomGenerator.getInstance();
-	int n1 = 5;
+	int n1 = 1;
 	int counter = 0;
 	int n2 = 1;
 	public void run(){
