@@ -19,9 +19,9 @@ public class midterm2021_3 extends GraphicsProgram{
 			add(point);
 			
 		}
-		public void mouseDragged(MouseEvent e){
-			point.setEndPoint(e.getX(), e.getY());
-		}
+//		public void mouseDragged(MouseEvent e){
+//			point.setEndPoint(e.getX(), e.getY());
+//		}
 		public void mouseClicked(MouseEvent e){
 			point.setEndPoint(e.getX(), e.getY());
 			xStart = e.getX();
