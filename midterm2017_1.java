@@ -46,6 +46,8 @@ public class midterm2017_1 extends GraphicsProgram{
 				if(x1 > x2){
 					n--;
 					if(n >= -1){
+					remove(text);
+					text = new GLabel("" + n);
 					add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
 				}
 				}
