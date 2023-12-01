@@ -31,11 +31,11 @@ public class midterm2021_1 extends ConsoleProgram{
 	private int log(int n, int m){
 		int counter = 0;
 		int prevN = 1;
-		while(n < m){	// 5, 25
+		while(n < m){
+			n = 5;					// 5, 25
 			n = prevN *n;		// 5 25 
 			prevN = n;			// 5 25
 			counter++;			// 1 2
-			n = 5;
 		}
 		return counter;
 	}
