@@ -19,6 +19,7 @@ public class midterm_pr9 extends ConsoleProgram{
 		int money = 1000;
 		double counter = 0;
 		for(int i = 0; i < 2000; i++){
+			money = 1000;
 			while(money != 0){
 				money -= 10;
 				counter++;
