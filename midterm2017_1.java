@@ -25,11 +25,12 @@ public class midterm2017_1 extends GraphicsProgram{
 	double x2 = 0;
 	double y1 = 0;
 	int n = 0;
+	GRect square;
 	GLabel text;
 	GPoint point;
 	public void run(){
 		addMouseListeners();
-		GRect square = new GRect(BOX_SIZE, BOX_SIZE);
+		square = new GRect(BOX_SIZE, BOX_SIZE);
 		add(square, (getWidth() - BOX_SIZE)/2, (getHeight() - BOX_SIZE)/2);
 		text = new GLabel(""+n);
 		add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
@@ -41,8 +42,8 @@ public class midterm2017_1 extends GraphicsProgram{
 
 	public void mouseReleased(MouseEvent e){
 		x2 = e.getX();
-		if(getElementAt(e.getX(), e.getY()) != null){
-			if(getElementAt(x1, y1) != null){
+		if(getElementAt(e.getX(), e.getY()) == square){
+			if(getElementAt(x1, y1) == square){
 				if(point.getX() > e.getX()){
 				if(x1 > x2){
 					n--;
