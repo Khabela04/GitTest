@@ -19,6 +19,7 @@ public class midterm2021_3 extends GraphicsProgram{
 		line = new GLine(point.getX(), point.getY(), e.getX(), e.getY());
 		add(line);
 		point = new GPoint(e.getX(), e.getY());
+		remove(line);
 	}
 	public void mouseDragged(MouseEvent e){
 		line.setEndPoint(e.getX(), e.getY());
