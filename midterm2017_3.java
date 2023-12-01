@@ -34,7 +34,7 @@ public class midterm2017_3 extends ConsoleProgram{
 			}
 		}
 		for(int j = 0; j < text2.length(); j++){
-			if(text1.charAt(j) == letter2){
+			if(text2.charAt(j) == letter2){
 				counter2++;
 			}
 		}
