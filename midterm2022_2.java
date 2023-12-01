@@ -45,16 +45,16 @@ public class midterm2022_2 extends GraphicsProgram{
 	}
 	public void mouseClicked(MouseEvent e){
 		int counter = 0;
-		GObject obj = getElementAt(e.getX(), e.getY());
+		GRect obj =(GRect) getElementAt(e.getX(), e.getY());
 		if(obj == null){
 			return;
 		}
-		if(obj.getColor() == Color.WHITE){
+		if(obj.getFillColor() == Color.WHITE){
 			if(counter == 2){
 				prevBlack.setColor(Color.WHITE);
 				prevBlack = curBlack;
 			}
-			obj.setColor(Color.BLACK);
+			obj.setFillColor(Color.BLACK);
 			if(prevBlack == null){				
 				prevBlack = obj;
 			}
