@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm2022_1 extends ConsoleProgram{
 	public void run(){
 		String text1 = "iyo arabets rostevan";
-		String text2 = "iyo rets rostevan";
+		String text2 = "iyo raets rostevan";
 		println(manipulation(text1, text2));
 	}
 	private boolean manipulation(String text1, String text2){
