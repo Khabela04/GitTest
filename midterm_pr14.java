@@ -15,7 +15,7 @@ import acm.program.ConsoleProgram;
 public class midterm_pr14 extends ConsoleProgram{
 	public void run(){
 		boolean indicator = false;
-		for(int i = 0; i < 1000000; i++){
+		for(int i = 0; i < 20; i++){
 			indicator = false;
 			for(int j = 2; j < Math.sqrt(1000000); j++){
 				if(i % j == 0){
