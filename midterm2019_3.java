@@ -25,6 +25,7 @@ public class midterm2019_3 extends GraphicsProgram{
 		}
 		if(obj == circle){
 			while(true){
+				pause(DELAY);
 				int number = rgen.nextInt(1,5);
 				if(number == 1){
 					obj.setColor(Color.GREEN);
@@ -41,7 +42,6 @@ public class midterm2019_3 extends GraphicsProgram{
 				if(number == 5){
 					obj.setColor(Color.YELLOW);
 				}
-				pause(DELAY);
 				if(obj.getColor() == Color.GREEN){
 					break;
 				}
