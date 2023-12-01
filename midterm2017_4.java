@@ -15,9 +15,12 @@ public class midterm2017_4 extends ConsoleProgram {
 	RandomGenerator rgen = RandomGenerator.getInstance();
 	int n1 = 5;
 	int counter = 0;
+	int n2 = 1;
 	public void run(){
 		for(int i = 0; i < 1000; i++){
 			countSequence(n1);
+			n1 =5;
+			n2 = 1;
 		}
 		double average = counter/1000.0;
 		println(average);
@@ -25,7 +28,6 @@ public class midterm2017_4 extends ConsoleProgram {
 		
 	}
 	private void countSequence(int n1) {
-		int n2 = 1;
 		while(n2 != 0){
 			boolean isGerbi = rgen.nextBoolean();
 			if(isGerbi){
