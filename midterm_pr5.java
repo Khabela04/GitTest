@@ -17,7 +17,7 @@ public class midterm_pr5 extends ConsoleProgram{
 		int num = readInt("Give me a number: ");
 		for(int i =1; i < num; i++){
 			if(isSquare(i)){
-				println(isSquare(num-1))
+				println(isSquare(num-1));
 			}
 		}
 	}
