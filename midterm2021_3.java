@@ -3,28 +3,35 @@
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
+import acm.graphics.GObject;
+import acm.graphics.GPoint;
 import acm.program.GraphicsProgram;
 
 
 public class midterm2021_3 extends GraphicsProgram{
-		GLine point;
-		double xStart = 0;
-		double yStart = 0;
-		public void run(){
-			addMouseListeners();
-			drawLine();
-		}
-		private void drawLine(){
-			point = new GLine(xStart, yStart, 0, 0);
-			add(point);
-			
-		}
-//		public void mouseDragged(MouseEvent e){
-//			point.setEndPoint(e.getX(), e.getY());
-//		}
-		public void mouseClicked(MouseEvent e){
-			point.setEndPoint(e.getX(), e.getY());
-			xStart = e.getX();
-			yStart = e.getY();
-		}
+	GPoint point;
+	GLine line;
+	double startX = 0;
+	double startY = 0;
+	boolean indicator = false;
+	public void run(){
+		addMouseListeners();
+		addPoint();
+		addLine();
 	}
+	private void addPoint(){
+		point = new GPoint(0,0);
+	}
+	private void addLine(){
+		startX = point.getX();
+		startY = point.getY();
+		line = new GLine(startX, startY, 0, 0);
+	}
+	public void mouseClicked(MouseEvent e){
+		line.setEndPoint(e.getX(), e.getY());
+		add(line);
+		startX = e.getX();
+		startY = e.getY();
+	}
+}
+	
