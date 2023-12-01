@@ -18,9 +18,9 @@ public class midterm_pr6 extends ConsoleProgram{
 		double money = 20;
 		double totalMoney = 0;
 		boolean isGerb = rgen.nextBoolean();
-		for(int i = 0; i < 10000; i++){
+		for(int i = 0; i < 10000; i++){		// 10000 თამაში მანამ სანამ, ფული არ გაუთავდება
 			money = 20;
-			for(int j = 0; j < 100; j++){
+			for(int j = 0; j < 100; j++){   	// თამაში მანამ სანამ, ფული არ გაუთავდება
 				if(money >1){
 					money -= 2;
 					if(isGerb){
