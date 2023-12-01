@@ -2,8 +2,9 @@ import acm.program.ConsoleProgram;
 
 public class midterm2017_3 extends ConsoleProgram{
 	public void run(){
-		String text1 = "gamarjoba";
-		String text2 = "baro";
+		while(true){
+		String text1 = readLine("Give me a word: ");
+		String text2 = readLine("Give me a word: ");
 		boolean indicator = true;
 		for(int i = 0; i < text2.length(); i++){
 			char letter2 = text2.charAt(i);
@@ -17,5 +18,6 @@ public class midterm2017_3 extends ConsoleProgram{
 		}else{
 			println("You can't do it");
 		}
+	}
 	}
 }
