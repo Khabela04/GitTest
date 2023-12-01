@@ -1,6 +1,8 @@
+import java.awt.Color;
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLabel;
+import acm.graphics.GObject;
 import acm.graphics.GPoint;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
@@ -39,6 +41,12 @@ public class midterm2017_1 extends GraphicsProgram{
 	public void mousePressed(MouseEvent e){
 		x1 = e.getX();
 		y1 = e.getY();
+	}
+	public void mouseClicked(MouseEvent e){
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj != null){
+			obj.setColor(Color.RED);
+		}
 	}
 	public void mouseDragged(MouseEvent e){
 		square.setLocation(e.getX() - BOX_SIZE/2, e.getY() - BOX_SIZE/2);
