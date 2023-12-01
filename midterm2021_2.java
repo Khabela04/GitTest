@@ -10,11 +10,11 @@ public class midterm2021_2 extends ConsoleProgram{
 
 	private boolean amIYourFatherLuke(String lukeDNA, String anakinDNA){
 		int maxLength = 0;
-		for(int i = 0; i < lukeDNA.length(); i++){
+		for(int i = 0; i < lukeDNA.length(); i++){		//i = 0
 			//!! to include substring at the end =>  j < lukeDNA.length() + 1
-			for(int j = i + 1; j < lukeDNA.length() + 1; j++){
-				String currSubs = lukeDNA.substring(i, j);
-				if(anakinDNA.indexOf(currSubs) == -1){
+			for(int j = i + 1; j < lukeDNA.length() + 1; j++){   	//j=2
+				String currSubs = lukeDNA.substring(i, j);			// CG
+				if(anakinDNA.indexOf(currSubs) == -2){				// 1
 					break;
 				}
 				maxLength = Math.max(maxLength, currSubs.length());
