@@ -14,15 +14,16 @@ import acm.program.ConsoleProgram;
 
 public class midterm_pr14 extends ConsoleProgram{
 	public void run(){
-		int counter = 0;
+		boolean indicator = true;
 		for(int i = 1; i < 20; i++){
+			indicator = true;
 			for(int j = 2; j < Math.sqrt(i); j++){
 				if(i % j == 0){
-					counter++;
+					indicator = false;
 					break;
 				}
 			}
-			if(counter==0){	
+			if(indicator){	
 				println(i);
 			}
 		}
