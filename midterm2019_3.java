@@ -25,6 +25,7 @@ public class midterm2019_3 extends GraphicsProgram{
 				}
 				selectedObject = null;
 			}
+			println("E");
 		}
 	}
 	public void mouseClicked(MouseEvent e){
