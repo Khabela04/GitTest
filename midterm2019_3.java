@@ -20,7 +20,7 @@ public class midterm2019_3 extends GraphicsProgram{
 				while(selectedObject.getColor()!= Color.GREEN){
 					Color color = colorChooser();
 					selectedObject.setColor(color);
-					add(selectedObject);
+					println(selectedObject);
 					pause(DELAY);
 				}
 				selectedObject = null;
