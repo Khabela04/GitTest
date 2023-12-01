@@ -35,6 +35,8 @@ public class midterm2021_1 extends ConsoleProgram{
 			counter++;
 		}
 		return counter;
+	}
+}
 //		int counter = 0;
 //		int prevN = 1;
 //		while(n < m){
@@ -43,6 +45,6 @@ public class midterm2021_1 extends ConsoleProgram{
 //			prevN = n;			// 5 25
 //			counter++;			// 1 2
 //		}
-		return counter;
-	}
-}
+//		return counter;
+//	}
+//}
