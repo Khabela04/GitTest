@@ -38,32 +38,34 @@ public class midterm2022_2 extends GraphicsProgram{
 				square.setFilled(true);
 				square.setFillColor(Color.WHITE);
 				add(square, i*x, j*y);
-//				x += length;
+				x += length;
 			}
-//			y+= length;
+			y+= length;
 		}
 	}
 	public void mouseClicked(MouseEvent e){
 		int counter = 0;
 		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj != null){
-			if(obj.getColor() == Color.WHITE){
-				if(counter == 2){
-					prevBlack.setColor(Color.WHITE);
-					prevBlack = curBlack;
-				}
-				obj.setColor(Color.BLACK);
-				if(prevBlack == null){
-					prevBlack = obj;
-				}
-				if(prevBlack != null){
-					curBlack = obj;
-				}
-				counter++;
+		if(obj == null){
+			return;
+		}
+		if(obj.getColor() == Color.WHITE){
+			if(counter == 2){
+				prevBlack.setColor(Color.WHITE);
+				prevBlack = curBlack;
+			}
+			obj.setColor(Color.BLACK);
+			if(prevBlack == null){				
+				prevBlack = obj;
+			}
+			if(prevBlack != null){
+				curBlack = obj;
+			}
+			counter++;
 			}else{
 				obj.setColor(Color.WHITE);
 			}
 			
-		}
 	}
 }
+
