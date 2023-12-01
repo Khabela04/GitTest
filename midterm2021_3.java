@@ -18,10 +18,12 @@ public class midterm2021_3 extends GraphicsProgram{
 //		add(point);
 //		
 //	}
-	public void MouseDragged(MouseEvent e){
+	@Override
+	public void mouseDragged(MouseEvent e){
 		point.setEndPoint(e.getX(), e.getY());
 	}
-	public void MouseClicked(MouseEvent e){
+	@Override
+	public void mouseClicked(MouseEvent e){
 		point = new GLine(e.getX(), e.getY(),e.getX() , e.getY());
 		add(point);
 //		xStart = e.getX();
