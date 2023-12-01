@@ -18,8 +18,10 @@ public class midterm_pr5 extends ConsoleProgram{
 		int num = readInt("Give me a number: ");
 		for(int i =1; i < num; i++){
 			if(isSquare(i)){
+				if(isSquare(num -1)){
 				indicator = true;
 				break;
+				}
 			}
 		}
 		println(indicator);
