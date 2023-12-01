@@ -20,7 +20,7 @@ public class midterm_pr6 extends ConsoleProgram{
 		boolean isGerb = rgen.nextBoolean();
 		for(int i = 0; i < 10000; i++){
 			money = 20;
-			for(int i = 0; i < 100; i++){
+			for(int j = 0; j < 100; j++){
 				if(money >1){
 					money -= 2;
 					if(isGerb){
