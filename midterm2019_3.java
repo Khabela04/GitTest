@@ -8,7 +8,7 @@ import acm.util.RandomGenerator;
 
 public class midterm2019_3 extends GraphicsProgram{
 	private final int CIRCLE_D = 100;
-	private final int DELAY = 100;
+	private final int DELAY = 10;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GObject selectedObject = null;
 	GOval circle;
