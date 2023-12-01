@@ -11,17 +11,19 @@ public class midterm2019_3 extends GraphicsProgram{
 	private final int DELAY = 100;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private GObject selectedObject = null;
+	GOval circle;
 	public void run(){
 		addMouseListeners();
 	}
 	public void mouseClicked(MouseEvent e){
 		GObject obj = getElementAt(getX(), getY());
 		if(obj == null){
-			GOval circle = new GOval(CIRCLE_D, CIRCLE_D);
+			circle = new GOval(CIRCLE_D, CIRCLE_D);
 			add(circle, e.getX() - CIRCLE_D/2, e.getY() -CIRCLE_D/2);
 			circle.setFilled(true);
 			circle.setColor(rgen.nextColor());
-		}else{
+		}
+		if(obj == circle){
 			while(true){
 				int number = rgen.nextInt(1,5);
 				if(number == 1){
