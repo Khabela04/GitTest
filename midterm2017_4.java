@@ -28,7 +28,7 @@ public class midterm2017_4 extends ConsoleProgram {
 		
 	}
 	private void countSequence(int n1) {
-		while(n2 != 0){
+		while(n2 >= 0){
 			boolean isGerbi = rgen.nextBoolean();
 			if(isGerbi){
 				n2 = n1/2;
