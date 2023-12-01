@@ -31,7 +31,7 @@ public class midterm_pr9 extends ConsoleProgram{
 		println(counter/2000);
 	}
 	private boolean rouletteSimulation(int n){
-		int winner = rgen.nextInt(0, 2);
+		int winner = rgen.nextInt(0, 1);
 		if(winner == n){
 			return true;
 		}
