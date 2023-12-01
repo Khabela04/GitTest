@@ -19,7 +19,7 @@ public class midterm2017_4 extends ConsoleProgram {
 	public void run(){
 		for(int i = 0; i < 1000; i++){
 			countSequence(n1);
-			n1 =5;
+			n1 =1;
 			n2 = 1;
 		}
 		double average = counter/1000.0;
