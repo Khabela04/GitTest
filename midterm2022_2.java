@@ -37,10 +37,10 @@ public class midterm2022_2 extends GraphicsProgram{
 				GRect square = new GRect(length, length);
 				square.setFilled(true);
 				square.setFillColor(Color.WHITE);
-				add(square, x, y);
-				x += length;
+				add(square, i*x, j*y);
+//				x += length;
 			}
-			y+= length;
+//			y+= length;
 		}
 	}
 	public void mouseClicked(MouseEvent e){
