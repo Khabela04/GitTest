@@ -46,13 +46,17 @@ public class midterm2017_1 extends GraphicsProgram{
 			if(getElementAt(x1, y1) == square){
 				
 				if(x1 > x2){
-					n--;
+					if(n > 0){
+						n--;
+					}
 					remove(text);
 					text = new GLabel("" + n);
 					add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
 				}
 				if(x1 < x2){
+					if(n<9){
 					n++;
+					}
 					remove(text);
 					text = new GLabel("" + n);
 					add(text, (getWidth() - text.getWidth())/2, getHeight()/2 + text.getHeight()/2);
