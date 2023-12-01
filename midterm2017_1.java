@@ -36,13 +36,14 @@ public class midterm2017_1 extends GraphicsProgram{
 	}
 	public void mousePressed(MouseEvent e){
 		x1 = e.getX();
+		y1 = e.getY();
 	}
 
 	public void mouseReleased(MouseEvent e){
 		x2 = e.getX();
-//		if(getElementAt(getX(), getY()) != null){
-//			if(getElementAt(x1, y1) != null){
-//				if(point.getX() > e.getX()){
+		if(getElementAt(e.getX(), e.getY()) != null){
+			if(getElementAt(x1, y1) != null){
+				if(point.getX() > e.getX()){
 				if(x1 > x2){
 					n--;
 					remove(text);
@@ -62,6 +63,7 @@ public class midterm2017_1 extends GraphicsProgram{
 //				}
 //			}
 				}}
+		}}}
 	
 //	public void mouseDragged(MouseEvent e){
 //		if(x1>x2){
