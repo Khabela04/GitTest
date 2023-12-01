@@ -20,7 +20,7 @@ public class midterm_pr8 extends ConsoleProgram{
 		for(int j = 0; j < 10000; j++){
 			counterTwo = 0;
 			for(int i = 0; i < 4; i++){
-				boolean isTwo = rgen.nextBoolean(1/6);		// 2 iani amovida
+				boolean isTwo = rgen.nextBoolean();		// 2 iani amovida
 				if(isTwo){
 					counterTwo ++;
 				}else{
