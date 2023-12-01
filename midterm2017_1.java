@@ -19,7 +19,7 @@ import acm.program.GraphicsProgram;
 
 
 public class midterm2017_1 extends GraphicsProgram{
-	private static final int BOX_SIZE = 50;
+	private static final int BOX_SIZE = 100;
 	double x1 = 0;
 	double y1 = 0;
 	int n = 0;
