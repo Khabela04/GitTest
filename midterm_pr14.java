@@ -17,7 +17,7 @@ public class midterm_pr14 extends ConsoleProgram{
 		boolean indicator = true;
 		for(int i = 1; i < 20; i++){
 			indicator = true;
-			for(int j = 2; j < Math.sqrt(i); j++){
+			for(int j = 2; j <= Math.sqrt(i); j++){
 				if(i % j == 0){
 					indicator = false;
 					break;
