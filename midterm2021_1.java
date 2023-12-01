@@ -24,7 +24,7 @@ import acm.program.ConsoleProgram;
 
 public class midterm2021_1 extends ConsoleProgram{
 	public void run(){
-		int m = 30;
+		int m = 125;
 		int n = 5;
 		println(log(n, m));
 	}
