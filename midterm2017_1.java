@@ -35,7 +35,7 @@ public class midterm2017_1 extends GraphicsProgram{
 		x1 = e.getX();
 		y1 = e.getY();
 	}
-	public void mouseDrageed(MouseEvent e){
+	public void mouseReleased(MouseEvent e){
 		if(getElementAt(getX(), getY()) != null){
 			if(getElementAt(x1, y1) != null){
 				if(x1 > e.getX()){
