@@ -23,10 +23,12 @@ public class midterm2019_3 extends GraphicsProgram{
 					println(selectedObject);
 					pause(DELAY);
 				}
-				selectedObject = null;
 			}
-		}
-	}
+			else{
+					selectedObject = null;
+				}
+				}
+			}
 	public void mouseClicked(MouseEvent e){
 		GObject obj = getElementAt(getX(), getY());
 		if(obj == null){
