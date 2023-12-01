@@ -24,12 +24,12 @@ public class midterm2019_3 extends GraphicsProgram{
 				while (selectedObject.getColor() != Color.GREEN) {
 					Color color = myRandomColor();
 					selectedObject.setColor(color);
-					println(selectedObject);
+//					println(selectedObject);
 					pause(DELAY);
 				}
 				selectedObject = null;
 			}
-			println("E");
+//			println("E");
 		}
 	}
 
