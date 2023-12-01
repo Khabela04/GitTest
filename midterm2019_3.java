@@ -25,7 +25,6 @@ public class midterm2019_3 extends GraphicsProgram{
 				}
 				selectedObject = null;
 			}
-			println("E");
 		}
 	}
 	public void mouseClicked(MouseEvent e){
@@ -34,6 +33,7 @@ public class midterm2019_3 extends GraphicsProgram{
 			circle = new GOval(CIRCLE_D, CIRCLE_D);
 			add(circle, e.getX() - CIRCLE_D/2, e.getY() -CIRCLE_D/2);
 			circle.setFilled(true);
+			circle.setColor(colorChooser());
 		}
 		if(obj == circle){
 			selectedObject = obj;
