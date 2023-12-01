@@ -24,17 +24,18 @@ import acm.program.ConsoleProgram;
 
 public class midterm2021_1 extends ConsoleProgram{
 	public void run(){
-		int m = 125*5*5;
+		int m = 25;
 		int n = 5;
 		println(log(n, m));
 	}
 	private int log(int n, int m){
 		int counter = 0;
 		int prevN = 1;
-		while(n < m){	// 5, 125
-			n = prevN *n;
-			prevN = n;
-			counter++;
+		while(n < m){	// 5, 25
+			n = prevN *n;		// 5 25 
+			prevN = n;			// 5 25
+			counter++;			// 1 2
+			n = 5;
 		}
 		return counter;
 	}
