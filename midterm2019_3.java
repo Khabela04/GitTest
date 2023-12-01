@@ -16,12 +16,10 @@ public class midterm2019_3 extends GraphicsProgram{
 	public void run(){
 		addMouseListeners();
 		while(true){
+			pause(DELAY);
 			if(selectedObject != null){
-				while(selectedObject.getColor()!= Color.GREEN){
-					Color color = colorChooser();
-					selectedObject.setColor(color);
-					println(selectedObject);
-					pause(DELAY);
+				if(selectedObject.getColor()!= Color.GREEN){
+					selectedObject.setColor(colorChooser(rgen.nextInt(1,5)));
 				}
 			}
 			else{
@@ -35,7 +33,7 @@ public class midterm2019_3 extends GraphicsProgram{
 			circle = new GOval(CIRCLE_D, CIRCLE_D);
 			add(circle, e.getX() - CIRCLE_D/2, e.getY() -CIRCLE_D/2);
 			circle.setFilled(true);
-			circle.setColor(colorChooser());
+			circle.setColor(rgen.nextColor());
 		}
 		if(obj == circle){
 			selectedObject = obj;
@@ -43,8 +41,7 @@ public class midterm2019_3 extends GraphicsProgram{
 		
 		}
 	}
-	private Color colorChooser(){
-			int number = rgen.nextInt(1,5);
+	private Color colorChooser(int number){
 			if(number == 1){
 				return Color.GREEN;
 			}
