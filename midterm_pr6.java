@@ -33,5 +33,6 @@ public class midterm_pr6 extends ConsoleProgram{
 			totalMoney += money;
 		}
 		double averageMoney = totalMoney/ 10000;
+		println(averageMoney);
 }
 }
