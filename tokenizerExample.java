@@ -7,7 +7,10 @@ public class tokenizerExample extends ConsoleProgram {
 		String name = "Saba Magaria";
 		StringTokenizer tokenizer = new StringTokenizer(name, ".,");
 		while(tokenizer.hasMoreTokens()){
-			println(tokenizer.nextToken());
+			String token = tokenizer.nextToken();
+			name.concat(token);
+			println(name.concat(token));
+			
 		}
 	}
 }
