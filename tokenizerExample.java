@@ -5,11 +5,14 @@ import acm.program.ConsoleProgram;
 public class tokenizerExample extends ConsoleProgram {
 	public void run(){
 		String name = "Saba Magaria";
+		String saba = name.concat("saba");
+		println(name);
+		println(saba);
 		StringTokenizer tokenizer = new StringTokenizer(name, ".,");
 		while(tokenizer.hasMoreTokens()){
 			String token = tokenizer.nextToken();
 			name.concat(token);
-			println(name.concat(token));
+//			println(name.concat(token));
 			
 		}
 	}
