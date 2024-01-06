@@ -7,7 +7,7 @@ import acm.program.ConsoleProgram;
 
 public class Problem52 extends ConsoleProgram {
 	String text = "";
-	private static final String FILE_NAME = "src/Problem52.java";
+	private static final String FILE_NAME = "Problem52.java";
 	public void run(){
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME));
