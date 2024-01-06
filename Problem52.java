@@ -6,12 +6,12 @@ import java.io.IOException;
 import acm.program.ConsoleProgram;
 
 public class Problem52 extends ConsoleProgram {
+	String text = "";
 	private static final String FILE_NAME = "src/Problem52.java";
 	public void run(){
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME));
 			while(true){
-				String text;
 				try {
 					text = reader.readLine();
 				} catch (IOException e) {
