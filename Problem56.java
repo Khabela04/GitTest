@@ -17,7 +17,7 @@ public class Problem56 extends ConsoleProgram {
 	}
 	private void sortedNumbers() {
 		int counter = 0;
-		String blank = " ";
+		String blank = "";
 		sortedNums = new int[numbers.length];
 		for(int i = 0; i < numbers.length; i++){
 			for(int j = 0; j < numbers.length; j++){
