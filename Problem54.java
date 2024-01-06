@@ -17,7 +17,7 @@ public class Problem54 extends ConsoleProgram {
 			}
 			maximums();
 			print( maximum1);
-			print(", "+maximum2);
+			println(", "+maximum2);
 		}
 	}
 	private void maximums() {
