@@ -7,16 +7,18 @@ public class Problem54 extends ConsoleProgram {
 	int maximum1 = 0;
 	int maximum2 = 0;
 	public void run(){
-		int number = 0;
-		int n = readInt("Enter quantity of numbers I will get: ");
-		numbers = new int[n];
-		for(int i = 0; i < n; i++){
-			number = readInt("Enter a whole number");
-			numbers[i] = number;
+		while(true){
+			int number = 0;
+			int n = readInt("Enter quantity of numbers I will get: ");
+			numbers = new int[n];
+			for(int i = 0; i < n; i++){
+				number = readInt("Enter a whole number");
+				numbers[i] = number;
+			}
+			maximums();
+			print( maximum1);
+			print(", "+maximum2);
 		}
-		maximums();
-		print( maximum1);
-		print(", "+maximum2);
 	}
 	private void maximums() {
 		for(int i = 0; i < numbers.length; i++){
