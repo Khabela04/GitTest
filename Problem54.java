@@ -15,7 +15,7 @@ public class Problem54 extends ConsoleProgram {
 			numbers[i] = number;
 		}
 		maximums();
-		println(maximum1 + maximum2);
+		println('0'+ maximum1 + '0' + maximum2);
 	}
 	private void maximums() {
 		for(int i = 0; i < numbers.length; i++){
