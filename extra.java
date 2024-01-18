@@ -30,7 +30,6 @@ public class extra extends ConsoleProgram {
 				result[i][j] = x[i+j];
 			}
 		}
-		println("saba" instanceof String);
 		toString(result);
 	}
 	private void toString(int[][] result) {
@@ -46,5 +45,6 @@ public class extra extends ConsoleProgram {
 		blank += "]";
 		println(blank);
 	}
+	
 }
 
