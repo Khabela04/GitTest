@@ -24,12 +24,13 @@ public class extra extends ConsoleProgram {
 	public void eachCons(int [] x, int n){
 		int l = x.length - n +1;
 		int [][] result = new int[l][n];
-		for(int i = 0; i < l-1; i++){
+		for(int i = 0; i < l; i++){
 			int[] blank = new int[n];
 			for(int j = 0; j < n; j++){
 				result[i][j] = x[i+j];
 			}
 		}
+		println("saba" instanceof String);
 		toString(result);
 	}
 	private void toString(int[][] result) {
