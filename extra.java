@@ -36,11 +36,11 @@ public class extra extends ConsoleProgram {
 		String blank = "[";
 		for(int i = 0; i < result.length; i++){
 			for(int j = 0; j < result[1].length; j++){
-				blank += "[";
 				blank += result[i][j];
 				blank += ", ";
 			}
 			blank += "]";
+			blank += "[";
 		}
 		blank += "]";
 		println(blank);
