@@ -17,7 +17,8 @@ public class extra extends ConsoleProgram  {
 	}
 
 	private void each_cons(int [] n, int m) {
-		int [][] array = new int [4][m];
+		int x = n.length -(m-1);
+		int [][] array = new int [x][m];
 		int counter = 0;
 		int count = 0;
 		for(int i = 0; i < n.length; i++){
