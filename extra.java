@@ -37,7 +37,7 @@ public class extra extends ConsoleProgram {
 		for(int i = 0; i < result.length; i++){
 			for(int j = 0; j < result[1].length; j++){
 				blank += result[i][j];
-				blank += ", ";
+				blank += " ";
 			}
 			blank += "]";
 			blank += "[";
