@@ -29,6 +29,10 @@ public class extra extends ConsoleProgram  {
 				counter = 0;
 			}
 		}
-		
+		String blank = "";
+		for(int j = 0; j < array.length; j++){
+			blank+= array[j];
+		}
+		println(blank);
 	}
 }
