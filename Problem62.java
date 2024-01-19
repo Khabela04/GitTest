@@ -9,6 +9,7 @@ public class Problem62 extends ConsoleProgram {
 	public void run(){
 		String name = readLine("Name: ");
 		names = new ArrayList <String>();
+		names.add(name);
 		while(!(name.equals(""))){
 			name = readLine("Name: ");
 			names.add(name);
