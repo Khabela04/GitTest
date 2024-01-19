@@ -28,10 +28,10 @@ public class Problem58 extends ConsoleProgram {
 					}
 				}
 			}
-			for(int i = 0; i < result.length; i++){
-				if(result[i] == 0){
-					return false;
-				}
+		}
+		for(int i = 0; i < result.length; i++){
+			if(result[i] == 0){
+				return false;
 			}
 		}
 		return true;
