@@ -30,7 +30,7 @@ public class Problem59 extends ConsoleProgram{
 				for(int i2 = i1; i2 < ar.length; i2++){
 					for(int j2 = j1; j2<ar[0].length; j2++){
 						if(hasOnlyOnes(ar, i1, j1, i2, j2)){
-							int curprod = (i2-i1+1)*(j2-j1+1);
+							int curprod = (i2-i1-1)*(j2-j1-1);
 							Maxproduct = Math.max(curprod,Maxproduct );
 						}
 					}
