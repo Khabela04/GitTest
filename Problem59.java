@@ -26,22 +26,23 @@ public class Problem59 extends ConsoleProgram{
 		int Maxproduct = 0;
 		for(int i1 = 0; i1 < ar.length; i1++){
 			for(int j1 = 0; j1 < ar[0].length; j1++){
-				// coordinates of first i and j
 				for(int i2 = i1; i2 < ar.length; i2++){
-					for(int j2 = j1; j2<ar[0].length; j2++){
-						if(hasOnlyOnes(ar, i1, j1, i2, j2)){
-							int curprod = (i2-i1+1)*(j2-j1+1);
-							Maxproduct = Math.max(curprod,Maxproduct );
+					for(int j2 = j1; j2 < ar[0].length; j2++){
+						if(isOnlyOnes(ar, i1, i2, j1, j2)){
+							int curProd = (j2-j1+1)*(i2-i1+1);
+							Maxproduct = Math.max(curProd, Maxproduct);
 						}
 					}
 				}
 			}
 		}
 		return Maxproduct;
+	
+		
 	}
-	private boolean hasOnlyOnes(int[][] ar, int i1, int j1, int i2, int j2) {
-		for(int i = i1; i <= i2; i++){
-			for(int j = j1; j <= j2; j++){
+	private boolean isOnlyOnes(int[][] ar, int i1, int i2, int j1, int j2) {
+		for(int i = i1; i < i2; i++){
+			for(int j = j1; j < j2; j++){
 				if(ar[i][j] == 0){
 					return false;
 				}
