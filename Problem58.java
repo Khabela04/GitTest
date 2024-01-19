@@ -21,8 +21,8 @@ public class Problem58 extends ConsoleProgram {
 				for(int j = 0; j < matrix[0].length;j++){
 					for(int l = 1; l < (matrix.length)*(matrix.length)+1; l++){
 						if(matrix[i][j] == l){
-							if(result[l] == 0){
-								result[l] = 1;
+							if(result[l-1] == 0){
+								result[l-1] = 1;
 							}
 						}
 					}
