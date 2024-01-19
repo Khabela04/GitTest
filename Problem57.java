@@ -25,17 +25,17 @@ public class Problem57 extends ConsoleProgram {
 //		[saba]
 		for(int l = 0; l < w2.length();l++){
 			for(int k = 0; k < 26; k++){
-				if(w1.charAt(l) == ('a' + k)){
+				if(w2.charAt(l) == ('a' + k)){
 						result2[k] += 1;
 				}
 			}
 		}
 //		[anas]
 		String blank = "";
-//		for(int i = 0; i < 26; i++){
-//			blank+= result1[i];
-//		}
-//		println(blank);
+		for(int i = 0; i < 26; i++){
+			blank+= result1[i];
+		}
+		println(blank);
 		blank = "";
 		for(int i = 0; i<26;i++){
 			blank += result2[i];
