@@ -40,8 +40,8 @@ public class Problem59 extends ConsoleProgram{
 		return Maxproduct;
 	}
 	private boolean hasOnlyOnes(int[][] ar, int i1, int j1, int i2, int j2) {
-		for(int i = i1; i < i2; i++){
-			for(int j = j1; j < j2; j++){
+		for(int i = i1; i <= i2; i++){
+			for(int j = j1; j <= j2; j++){
 				if(ar[i][j] == 0){
 					return false;
 				}
