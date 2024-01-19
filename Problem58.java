@@ -19,7 +19,7 @@ public class Problem58 extends ConsoleProgram {
 		if(matrix.length == matrix[0].length){
 			for(int i = 0; i < matrix.length; i++){
 				for(int j = 0; j < matrix[0].length;j++){
-					for(int l = 1; l <= (matrix.length)*(matrix.length); l++){
+					for(int l = 1; l < (matrix.length)*(matrix.length)+1; l++){
 						if(matrix[i][j] == l){
 							if(result[l] == 0){
 								result[l] = 1;
