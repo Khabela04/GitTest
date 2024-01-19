@@ -7,10 +7,10 @@ import acm.program.ConsoleProgram;
 public class Problem58 extends ConsoleProgram {
 	public void run(){
 		int[][] matrix = new int[2][2];
-		matrix [1][1] = 1;
-		matrix [1][2] = 2;
-		matrix [2][1] = 3;
-		matrix [2][2] = 4;
+		matrix [0][0] = 1;
+		matrix [0][1] = 2;
+		matrix [1][0] = 3;
+		matrix [1][1] = 4;
 		println(magicMatrix(matrix));
 	}
 
