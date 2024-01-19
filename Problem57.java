@@ -36,6 +36,11 @@ public class Problem57 extends ConsoleProgram {
 			blank+= result1[i];
 		}
 		println(blank);
+		blank = "";
+		for(int i = 0; i<26;i++){
+			blank += result2[i];
+		}
+		println(blank);
 		for(int n = 0; n < result1.length;n++){
 			if(result1[n] != result2[n]){
 				return false;
