@@ -30,10 +30,10 @@ public class Problem57 extends ConsoleProgram {
 			}
 		}
 		for(int i = 0; i < result1.length;i++){
-			if(result1[i] == result2[i]){
-				return true;
+			if(result1[i] != result2[i]){
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 }
