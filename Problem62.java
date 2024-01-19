@@ -21,11 +21,13 @@ public class Problem62 extends ConsoleProgram {
 		int counter = 0;
 		for(int i = 0; i < names.size();i++){
 			for(int j = 0; j < names.size(); j++){
-				if(names.get(i).equals(names.get(j))){
+				if((i > j) &&(names.get(i).equals(names.get(j)))){
 					counter++;
 				}
 			}
-			println(names.get(i) + counter);
+			if(counter > 0){
+				println(names.get(i) + " " + counter);
+			}
 			counter = 0;
 		}
 	}
