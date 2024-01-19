@@ -22,15 +22,17 @@ public class Problem57 extends ConsoleProgram {
 				}
 			}
 		}
-		for(int i = 0; i < w2.length();i++){
-			for(int j = 0; j < 26; j++){
-				if(w1.charAt(i) == ('a' + j)){
-						result2[j] += 1;
+//		[saba]
+		for(int l = 0; l < w2.length();l++){
+			for(int k = 0; k < 26; k++){
+				if(w1.charAt(l) == ('a' + k)){
+						result2[k] += 1;
 				}
 			}
 		}
-		for(int i = 0; i < result1.length;i++){
-			if(result1[i] != result2[i]){
+//		[anas]
+		for(int n = 0; n < result1.length;n++){
+			if(result1[n] != result2[n]){
 				return false;
 			}
 		}
