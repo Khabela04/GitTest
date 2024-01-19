@@ -30,8 +30,14 @@ public class Problem57 extends ConsoleProgram {
 			}
 		}
 		for(int n = 0; n < result1.length;n++){
-			if(result1[n] != result2[n]){
-				return false;
+			if(w1.length()>w2.length()){
+				if(result1[n] < result2[n]){
+					return false;
+				}
+			}else{
+				if(result1[n] > result2[n]){
+					return false;
+				}
 			}
 		}
 		return true;
