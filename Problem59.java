@@ -21,7 +21,7 @@ public class Problem59 extends ConsoleProgram{
 	private int bigRect(){
 		int [][] ar = {
 				{0, 1, 1, 0},
-				{1, 1, 1, 0},
+				{0, 1, 1, 0},
 				{0, 1, 1, 0}};
 		int Maxproduct = 0;
 		for(int i1 = 0; i1 < ar.length; i1++){
