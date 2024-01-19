@@ -32,10 +32,10 @@ public class Problem57 extends ConsoleProgram {
 		}
 //		[anas]
 		String blank = "";
-		for(int i = 0; i < 26; i++){
-			blank+= result1[i];
-		}
-		println(blank);
+//		for(int i = 0; i < 26; i++){
+//			blank+= result1[i];
+//		}
+//		println(blank);
 		blank = "";
 		for(int i = 0; i<26;i++){
 			blank += result2[i];
