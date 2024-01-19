@@ -15,7 +15,7 @@ public class Problem58 extends ConsoleProgram {
 	}
 
 	private boolean magicMatrix(int[][] matrix) {
-		int[] result = new int[(matrix.length * matrix.length)-1];
+		int[] result = new int[(matrix.length * matrix.length)];
 		if(matrix.length == matrix[0].length){
 			for(int i = 0; i < matrix.length; i++){
 				for(int j = 0; j < matrix[0].length;j++){
