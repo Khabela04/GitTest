@@ -25,6 +25,7 @@ public class Problem62 extends ConsoleProgram {
 				}
 			}
 			println(names.get(i) + counter);
+			counter = 0;
 		}
 	}
 }
