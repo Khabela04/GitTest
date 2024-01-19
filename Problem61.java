@@ -14,16 +14,19 @@ public class Problem61 extends ConsoleProgram {
 			result.add(l);
 		}
 		int d = 0;
+		int result1 = 0;
+		int result2 = 0;
 		for(int i = 0; i < result.size(); i++){
 			d = m - result.get(i);
 			for(int j = 0; j < result.size(); j++){
 				if((j != i) && (result.get(j) == d)){
+					result1 = result.get(i);
+					result2 = d;
 					break;
 				}
 			}
-			println(d);
-			println(result.get(i));
-			break;
 		}
+		println(result1);
+		println(result2);
 	}
 }
