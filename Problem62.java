@@ -12,7 +12,9 @@ public class Problem62 extends ConsoleProgram {
 		names.add(name);
 		while(!(name.equals(""))){
 			name = readLine("Name: ");
-			names.add(name);
+			if(!(name.equals(""))){
+				names.add(name);
+			}
 		}
 		printer(name);
 	}
