@@ -18,10 +18,12 @@ public class Problem61 extends ConsoleProgram {
 			d = m - result.get(i);
 			for(int j = 0; j < result.size(); j++){
 				if(result.get(j) == d){
-					println(d);
-					println(result.get(i));
+					break;
 				}
 			}
+			println(d);
+			println(result.get(i));
+			break;
 		}
 	}
 }
