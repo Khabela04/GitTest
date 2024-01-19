@@ -17,7 +17,7 @@ public class Problem61 extends ConsoleProgram {
 		for(int i = 0; i < result.size(); i++){
 			d = m - result.get(i);
 			for(int j = 0; j < result.size(); j++){
-				if(result.get(j) == d){
+				if((j != i) && (result.get(j) == d)){
 					break;
 				}
 			}
