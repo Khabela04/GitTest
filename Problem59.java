@@ -20,9 +20,9 @@ public class Problem59 extends ConsoleProgram{
 	}
 	private int bigRect(){
 		int [][] ar = {
-				{0, 1, 1, 0},
+				{0, 1, 1, 1},
 				{1, 1, 1, 1},
-				{0, 1, 1, 0}};
+				{0, 1, 1, 1}};
 		int Maxproduct = 0;
 		for(int i1 = 0; i1 < ar.length; i1++){
 			for(int j1 = 0; j1 < ar[0].length; j1++){
@@ -30,7 +30,7 @@ public class Problem59 extends ConsoleProgram{
 				for(int i2 = i1; i2 < ar.length; i2++){
 					for(int j2 = j1; j2<ar[0].length; j2++){
 						if(hasOnlyOnes(ar, i1, j1, i2, j2)){
-							int curprod = (i2-i1)*(j2-j1);
+							int curprod = (i2-i1+1)*(j2-j1+1);
 							Maxproduct = Math.max(curprod,Maxproduct );
 						}
 					}
