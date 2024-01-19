@@ -7,11 +7,12 @@ public class Problem60 extends ConsoleProgram {
 	public void run(){
 		int n = readInt("Number: ");
 		ArrayList <Integer> result = new ArrayList<Integer>();
+		result.add(n);
 		while(n != -1){
 			n = readInt("Number: ");
 			result.add(n);
 		}
-		for(int i = result.size()-2; i >= -1; i--){
+		for(int i = result.size()-2; i >= 0; i--){
 			println(result.get(i));
 		}
 	}
